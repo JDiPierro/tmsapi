@@ -9,7 +9,7 @@ module TMSAPI
       attribute :duration, Integer
       attribute :qualifiers, Array[String]
       attribute :channels, Array[String]
-      attribute :stations, TMSAPI::Model::Station 
+      attribute :station, TMSAPI::Model::Station 
       attribute :station_id, Integer
       attribute :program, TMSAPI::Model::Program
       attribute :entity_type, String
