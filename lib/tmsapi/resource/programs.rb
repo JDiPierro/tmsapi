@@ -15,12 +15,12 @@ module TMSAPI
         end
       end
       
-      def details(params)
-        TMSAPI::Model::Program.new get(details_path(params[:tms_id]), params)
+      def details(tms_id, params = nil)
+        TMSAPI::Model::Program.new get(details_path(tms_id), params)
       end
       
-      def airings(params)
-        get(airings_path(params[:tms_id]), params).map do |airing|
+      def airings(tms_id, params = nil)
+        get(airings_path(tms_id), params).map do |airing|
           TMSAPI::Model::Airing.new airing
         end
       end

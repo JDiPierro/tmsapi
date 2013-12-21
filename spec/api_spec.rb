@@ -4,7 +4,7 @@ describe TMSAPI::API, :vcr do
   subject { ra = TMSAPI::API.new :api_key => api_key }
   let(:api_key)   { API_KEY }
   
-  describe '#programs' do
+  describe '#programs', :vcr do
   
     describe '#search' do
       
@@ -21,7 +21,7 @@ describe TMSAPI::API, :vcr do
     describe '#details' do
       
       let(:details) {
-        subject.programs.details({ :tms_id => "SH014122930000" })
+        subject.programs.details("SH014122930000")
       }
       
       it 'should be filled with program information' do
