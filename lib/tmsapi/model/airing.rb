@@ -12,6 +12,7 @@ module TMSAPI
       attribute :stations, TMSAPI::Model::Station 
       attribute :station_id, Integer
       attribute :program, TMSAPI::Model::Program
+      attribute :entity_type, String
     
     end
   end
