@@ -1,5 +1,6 @@
 require 'tmsapi/model/program'
 require 'tmsapi/model/airing'
+require 'date'
 
 module TMSAPI
   module Resource
@@ -24,6 +25,16 @@ module TMSAPI
           TMSAPI::Model::Airing.new airing
         end
       end
+      
+      def new_this_week(params = nil)
+        if params.nil?
+          start_date = Date.today - 7
+          params = {:startDate => start_date.to_s}
+        end
+        get(new_this_week_path,params).each do |new_program|
+          TMSAPI::Model::Program.new new_program
+        end
+      end
 
       private
 
@@ -37,6 +48,10 @@ module TMSAPI
       
       def airings_path(tms_id)
         "#{details_path(tms_id)}/airings"
+      end
+      
+      def new_this_week_path
+        "#{base_path}/newShowsLastWeek"
       end
 
       def base_path

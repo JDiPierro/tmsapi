@@ -36,6 +36,16 @@ describe TMSAPI::API, :vcr do
       
     end
     
+    describe '#new_this_week' do
+      let(:new_programs) {
+        subject.programs.new_this_week
+      }
+      
+      it 'should have programs' do
+        new_programs.count.should be >= 10
+      end
+    end
+    
   end
   
 end
