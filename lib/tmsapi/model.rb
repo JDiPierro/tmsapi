@@ -7,6 +7,7 @@ require 'tmsapi/model/program'
 require 'tmsapi/model/rating'
 require 'tmsapi/model/recommendation'
 require 'tmsapi/model/station'
+require 'tmsapi/model/event'
 
 module TMSAPI
   module Model
