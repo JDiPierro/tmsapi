@@ -8,6 +8,8 @@ require 'tmsapi/model/rating'
 require 'tmsapi/model/recommendation'
 require 'tmsapi/model/station'
 require 'tmsapi/model/event'
+require 'tmsapi/model/lineup'
+require 'tmsapi/model/station_airings'
 
 module TMSAPI
   module Model

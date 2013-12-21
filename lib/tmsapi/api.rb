@@ -27,6 +27,10 @@ module TMSAPI
     def stations
       TMSAPI::Resource::Stations.new(@faraday)
     end
+    
+    def lineups
+      TMSAPI::Resource::Lineups.new(@faraday)
+    end
 
     def default_faraday
       Faraday.new(:url => @base_url, :ssl => @ssl) do |faraday|
