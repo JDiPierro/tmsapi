@@ -4,7 +4,7 @@ describe TMSAPI::API, :vcr do
   subject { client = TMSAPI::API.new :api_key => api_key, :debug => false}
   let(:api_key)   { API_KEY }
   
-  describe '#programs'
+  describe '#programs' do
   
     describe '#search' do
       
@@ -143,17 +143,18 @@ describe TMSAPI::API, :vcr do
   
   describe '#lineups' do
     
-    desribe '#find' do
+    describe '#find' do
       let(:lineups) {
-        subject.lineups.find({:zipCode => "12804"})
+        subject.lineups.find({:postalCode => "12804"})
       }
       
       it 'should find local lineups' do
         lineups.count.should be >= 15
         
-        lineups.first.respond_to?(:lineup_id).should be_true
-        lineups.first.respond_to?(:name).should be_true
-        lineups.first.respond_to?(:location).should be_true
+        lineups.last.respond_to?(:lineup_id).should be_true
+        lineups.last.respond_to?(:name).should be_true
+        lineups.last.respond_to?(:location).should be_true
+      end
     end
     
   end

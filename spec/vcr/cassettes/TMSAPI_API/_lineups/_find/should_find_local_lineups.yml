@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1/lineups?api_key=api_key_YYYYYYYYYYYYYYYYYYYYY&postalCode=12804
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - tmsapi rubygem v0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      !binary "eC1tYXNoZXJ5LXJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci1sYXgtMDIubWFzaGVyeS5jb20=
+      !binary "YWNjZXB0LXJhbmdlcw==":
+      - !binary |-
+        Ynl0ZXM=
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctaGVhZGVycw==":
+      - !binary |-
+        b3JpZ2luLCBjb250ZW50LXR5cGUsIGFjY2VwdA==
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctbWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NULCBPUFRJT05T
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "YWNjZXNzLWNvbnRyb2wtY29udGVudC10eXBl":
+      - !binary |-
+        Ki8q
+      !binary "YWNjZXNzLWNvbnRyb2wtbWF4LWFnZQ==":
+      - !binary |-
+        ODY0MDA=
+      !binary "YWdl":
+      - !binary |-
+        MA==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PSJVVEYtOCI=
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U2F0LCAyMSBEZWMgMjAxMyAyMDowNToyMiBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        SmV0dHkoNi4xLjI0KQ==
+      !binary "dmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "eC12YXJuaXNo":
+      - !binary |-
+        OTU2ODA4MTAz
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sidHlwZSI6Ik9UQSIsImxpbmV1cElkIjoiVVNBLU9UQTEyODA0IiwibmFt
+        ZSI6IkxvY2FsIn0seyJ0eXBlIjoiQ0FCTEUiLCJsaW5ldXBJZCI6IlVTQS1O
+        WTMxNTg2LURFRkFVTFQiLCJuYW1lIjoiVGltZSBXYXJuZXIgQ2FibGUgLSBD
+        YWJsZSAoUXVlZW5zYnVyeSkiLCJkZXZpY2UiOiJERUZBVUxUIiwibG9jYXRp
+        b24iOiJRdWVlbnNidXJ5In0seyJ0eXBlIjoiU0FURUxMSVRFIiwibGluZXVw
+        SWQiOiJVU0EtRElUVjUzMi1ERUZBVUxUIiwibmFtZSI6IkRJUkVDVFYgQWxi
+        YW55IChBbGJhbnkpIiwiZGV2aWNlIjoiREVGQVVMVCIsImxvY2F0aW9uIjoi
+        QWxiYW55In0seyJ0eXBlIjoiQ0FCTEUiLCJsaW5ldXBJZCI6IlVTQS1OWTMx
+        NTg2LVgiLCJuYW1lIjoiVGltZSBXYXJuZXIgQ2FibGUgLSBEaWdpdGFsIChR
+        dWVlbnNidXJ5KSIsImRldmljZSI6IlgiLCJsb2NhdGlvbiI6IlF1ZWVuc2J1
+        cnkifSx7InR5cGUiOiJTQVRFTExJVEUiLCJsaW5ldXBJZCI6IlVTQS1ESVNI
+        NTMyLURFRkFVTFQiLCJuYW1lIjoiRElTSCBBbGJhbnkgKEFsYmFueSkiLCJk
+        ZXZpY2UiOiJERUZBVUxUIiwibG9jYXRpb24iOiJBbGJhbnkifSx7InR5cGUi
+        OiJTQVRFTExJVEUiLCJsaW5ldXBJZCI6IlVTQS1HTE9CRVRWLURFRkFVTFQi
+        LCJuYW1lIjoiTXlHbG9iZVRWIChVU0EpIiwiZGV2aWNlIjoiREVGQVVMVCIs
+        ImxvY2F0aW9uIjoiVVNBIn0seyJ0eXBlIjoiU0FURUxMSVRFIiwibGluZXVw
+        SWQiOiJVU0EtUkVMQVlUVi1ERUZBVUxUIiwibmFtZSI6IlJFTEFZVFYgKFVT
+        QSkiLCJkZXZpY2UiOiJERUZBVUxUIiwibG9jYXRpb24iOiJVU0EifSx7InR5
+        cGUiOiJTQVRFTExJVEUiLCJsaW5ldXBJZCI6IlVTQS1DLUJBTkQtREVGQVVM
+        VCIsIm5hbWUiOiJDLUJhbmQgKFVTQSkiLCJkZXZpY2UiOiJERUZBVUxUIiwi
+        bG9jYXRpb24iOiJVU0EifSx7InR5cGUiOiJTQVRFTExJVEUiLCJsaW5ldXBJ
+        ZCI6IlVTQS1GQVZFLURFRkFVTFQiLCJuYW1lIjoiRkFWRSAoVVNBKSIsImRl
+        dmljZSI6IkRFRkFVTFQiLCJsb2NhdGlvbiI6IlVTQSJ9LHsidHlwZSI6IlNB
+        VEVMTElURSIsImxpbmV1cElkIjoiVVNBLTREVFYtREVGQVVMVCIsIm5hbWUi
+        OiI0RFRWIChVU0EpIiwiZGV2aWNlIjoiREVGQVVMVCIsImxvY2F0aW9uIjoi
+        VVNBIn0seyJ0eXBlIjoiU0FURUxMSVRFIiwibGluZXVwSWQiOiJVU0EtRElU
+        Vi1ERUZBVUxUIiwibmFtZSI6IkRJUkVDVFYgKFVTQSkiLCJkZXZpY2UiOiJE
+        RUZBVUxUIiwibG9jYXRpb24iOiJVU0EifSx7InR5cGUiOiJTQVRFTExJVEUi
+        LCJsaW5ldXBJZCI6IlVTQS1HTE9CQ1NULURFRkFVTFQiLCJuYW1lIjoiR2xv
+        YmVjYXN0IFdvcmxkIFRWIChVU0EpIiwiZGV2aWNlIjoiREVGQVVMVCIsImxv
+        Y2F0aW9uIjoiVVNBIn0seyJ0eXBlIjoiU0FURUxMSVRFIiwibGluZXVwSWQi
+        OiJVU0EtU0tZQU5HTC1ERUZBVUxUIiwibmFtZSI6IlNreSBBbmdlbCBGYWl0
+        aCBUViAoVVNBKSIsImRldmljZSI6IkRFRkFVTFQiLCJsb2NhdGlvbiI6IlVT
+        QSJ9LHsidHlwZSI6IlNBVEVMTElURSIsImxpbmV1cElkIjoiVVNBLUFGTi1E
+        RUZBVUxUIiwibmFtZSI6IkFGTiBTYXRlbGxpdGUgKFVTQSkiLCJkZXZpY2Ui
+        OiJERUZBVUxUIiwibG9jYXRpb24iOiJVU0EifSx7InR5cGUiOiJTQVRFTExJ
+        VEUiLCJsaW5ldXBJZCI6IlVTQS1FQ0hPU1QtREVGQVVMVCIsIm5hbWUiOiJE
+        SVNIIE5ldHdvcmsgKFVTQSkiLCJkZXZpY2UiOiJERUZBVUxUIiwibG9jYXRp
+        b24iOiJVU0EifV0=
+    http_version: 
+  recorded_at: Sat, 21 Dec 2013 20:05:22 GMT
+recorded_with: VCR 2.8.0
