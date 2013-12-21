@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe TMSAPI::API, :vcr do
-  subject { ra = TMSAPI::API.new :api_key => api_key }
+  subject { client = TMSAPI::API.new :api_key => api_key}
   let(:api_key)   { API_KEY }
   
   describe '#programs', :vcr do
@@ -36,6 +36,19 @@ describe TMSAPI::API, :vcr do
       
     end
     
+    describe '#airings' do
+      let(:airings) {
+        subject.programs.airings("SH014122930000", { :lineupId => "USA-NY31586-X", :startDateTime => "2013-12-21T17:30Z" })
+      }
+      
+      it 'should find airings' do
+        airings.count.should be >= 0
+        
+        airings.first.respond_to?(:start_time).should be_true
+        airings.first.respond_to?(:duration).should be_true
+      end
+    end
+    
     describe '#new_this_week' do
       let(:new_programs) {
         subject.programs.new_this_week
@@ -43,6 +56,9 @@ describe TMSAPI::API, :vcr do
       
       it 'should have programs' do
         new_programs.count.should be >= 10
+        
+        new_programs.first.respond_to?(:tms_id).should be_true
+        new_programs.first.respond_to?(:long_description).should be_true
       end
     end
     

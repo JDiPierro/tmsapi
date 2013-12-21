@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1/programs/SH014122930000/airings?api_key=api_key_YYYYYYYYYYYYYYYYYYYYY&lineupId=USA-NY31586-X&startDateTime=2013-12-21T17%3A30Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - tmsapi rubygem v0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      !binary "eC1tYXNoZXJ5LXJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci1sYXgtMDEubWFzaGVyeS5jb20=
+      !binary "YWNjZXB0LXJhbmdlcw==":
+      - !binary |-
+        Ynl0ZXM=
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctaGVhZGVycw==":
+      - !binary |-
+        b3JpZ2luLCBjb250ZW50LXR5cGUsIGFjY2VwdA==
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctbWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NULCBPUFRJT05T
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "YWNjZXNzLWNvbnRyb2wtY29udGVudC10eXBl":
+      - !binary |-
+        Ki8q
+      !binary "YWNjZXNzLWNvbnRyb2wtbWF4LWFnZQ==":
+      - !binary |-
+        ODY0MDA=
+      !binary "YWdl":
+      - !binary |-
+        MA==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PSJVVEYtOCI=
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U2F0LCAyMSBEZWMgMjAxMyAxODowMDowNiBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        SmV0dHkoNi4xLjI0KQ==
+      !binary "dmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "eC12YXJuaXNo":
+      - !binary |-
+        MTEzMjkxODc4NA==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sic3RhcnRUaW1lIjoiMjAxMy0xMi0yMVQxODowMFoiLCJlbmRUaW1lIjoi
+        MjAxMy0xMi0yMVQxODozMFoiLCJkdXJhdGlvbiI6MzAsInJhdGluZ3MiOlt7
+        ImJvZHkiOiJVU0EgUGFyZW50YWwgUmF0aW5nIiwiY29kZSI6IlRWWTcifV0s
+        ImNoYW5uZWxzIjpbIjAzMiIsIjI2NCJdLCJzdGF0aW9uIjp7InByZWZlcnJl
+        ZEltYWdlIjp7InVyaSI6Imh0dHA6Ly9kZW1vLnRtc2ltZy5jb20vc291cmNl
+        cy9oMy9Ob3dTaG93aW5nLzEyMTMxL3MxMjEzMV9oM19hYS5wbmciLCJoZWln
+        aHQiOiIyNzAiLCJ3aWR0aCI6IjM2MCIsInByaW1hcnkiOiJ0cnVlIiwiY2F0
+        ZWdvcnkiOiJMb2dvIn0sImNhbGxTaWduIjoiVE9PTiIsInN0YXRpb25JZCI6
+        IjEyMTMxIn0sInN0YXRpb25JZCI6IjEyMTMxIiwicHJvZ3JhbSI6eyJyb290
+        SWQiOiI5NTYyMjA4Iiwic2VyaWVzSWQiOiI4NjQ4NDI4IiwidG1zSWQiOiJF
+        UDAxNDEyMjkzMDA4MiJ9fSx7InN0YXJ0VGltZSI6IjIwMTMtMTItMjFUMTg6
+        MzBaIiwiZW5kVGltZSI6IjIwMTMtMTItMjFUMTk6MDBaIiwiZHVyYXRpb24i
+        OjMwLCJyYXRpbmdzIjpbeyJib2R5IjoiVVNBIFBhcmVudGFsIFJhdGluZyIs
+        ImNvZGUiOiJUVlk3In1dLCJjaGFubmVscyI6WyIwMzIiLCIyNjQiXSwic3Rh
+        dGlvbiI6eyJwcmVmZXJyZWRJbWFnZSI6eyJ1cmkiOiJodHRwOi8vZGVtby50
+        bXNpbWcuY29tL3NvdXJjZXMvaDMvTm93U2hvd2luZy8xMjEzMS9zMTIxMzFf
+        aDNfYWEucG5nIiwiaGVpZ2h0IjoiMjcwIiwid2lkdGgiOiIzNjAiLCJwcmlt
+        YXJ5IjoidHJ1ZSIsImNhdGVnb3J5IjoiTG9nbyJ9LCJjYWxsU2lnbiI6IlRP
+        T04iLCJzdGF0aW9uSWQiOiIxMjEzMSJ9LCJzdGF0aW9uSWQiOiIxMjEzMSIs
+        InByb2dyYW0iOnsicm9vdElkIjoiOTQ3ODQ2MiIsInNlcmllc0lkIjoiODY0
+        ODQyOCIsInRtc0lkIjoiRVAwMTQxMjI5MzAwNzQifX1d
+    http_version: 
+  recorded_at: Sat, 21 Dec 2013 18:00:06 GMT
+recorded_with: VCR 2.8.0
