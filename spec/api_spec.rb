@@ -49,9 +49,22 @@ describe TMSAPI::API, :vcr do
       end
     end
     
-    describe '#new_this_week' do
+    describe '#new_shows' do
+      let(:new_program_airings) {
+        subject.programs.new_shows({:lineupId => "USA-NY31586-X"})
+      }
+      
+      it 'should find new shows' do
+        new_program_airings.count.should be >= 10
+        
+        new_program_airings.first.respond_to?(:program)
+        new_program_airings.first.program.respond_to?(:tms_id)
+      end
+    end
+    
+    describe '#new_past_week' do
       let(:new_programs) {
-        subject.programs.new_this_week
+        subject.programs.new_past_week
       }
       
       it 'should have programs' do

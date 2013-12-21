@@ -26,16 +26,26 @@ module TMSAPI
         end
       end
       
-      def new_this_week(params = nil)
+      def new_shows(params)
+        if params[:startDateTime].nil?
+          params[:startDateTime] = Time.now.strftime("%Y-%m-%dT%H:%MZ")
+        end
+        
+        get(new_shows_path,params).each do |new_program|
+          TMSAPI::Model::Airing.new new_program
+        end
+      end
+      
+      def new_shows_past_week(params = nil)
         if params.nil?
           start_date = Date.today - 7
           params = {:startDate => start_date.to_s}
         end
-        get(new_this_week_path,params).each do |new_program|
+        get(new_shows_past_week_path,params).each do |new_program|
           TMSAPI::Model::Program.new new_program
         end
       end
-
+      
       private
 
       def search_path
@@ -50,10 +60,14 @@ module TMSAPI
         "#{details_path(tms_id)}/airings"
       end
       
-      def new_this_week_path
+      def new_shows_path
+        "#{base_path}/newShowAirings"
+      end
+      
+      def new_shows_past_week_path
         "#{base_path}/newShowsLastWeek"
       end
-
+      
       def base_path
         "programs"
       end
