@@ -31,7 +31,7 @@ describe TMSAPI::API, :vcr do
         details.respond_to?(:title).should be_true
         details.respond_to?(:long_description).should be_true
         details.respond_to?(:ratings).should be_true
-        details.respond_to?(:title).should be_true
+        details.respond_to?(:series_id).should be_true
       end
       
     end
