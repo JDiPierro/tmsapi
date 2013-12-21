@@ -8,6 +8,7 @@ module TMSAPI
       attribute :year, Integer
       attribute :recipient, String
       attribute :person_id, Integer
+      
     end
   end
 end

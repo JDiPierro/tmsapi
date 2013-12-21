@@ -1,4 +1,5 @@
-require "tmsapi/model/program"
+require 'tmsapi/model/program'
+require 'tmsapi/model/airing'
 
 module TMSAPI
   module Resource
