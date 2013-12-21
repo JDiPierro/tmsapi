@@ -51,7 +51,7 @@ describe TMSAPI::API, :vcr do
     
     describe '#new_shows' do
       let(:new_program_airings) {
-        subject.programs.new_shows({:lineupId => "USA-NY31586-X"})
+        subject.programs.new_shows({:startDateTime => "2013-12-21T13:34Z", :lineupId => "USA-NY31586-X"})
       }
       
       it 'should find new shows' do
@@ -64,7 +64,7 @@ describe TMSAPI::API, :vcr do
     
     describe '#new_past_week' do
       let(:new_programs) {
-        subject.programs.new_past_week
+        subject.programs.new_past_week({:startDate => "2013-12-21", :endDate => "2013-12-21"})
       }
       
       it 'should have programs' do
@@ -72,6 +72,41 @@ describe TMSAPI::API, :vcr do
         
         new_programs.first.respond_to?(:tms_id).should be_true
         new_programs.first.respond_to?(:long_description).should be_true
+      end
+    end
+    
+    describe '#advance_planner' do
+      let(:events) {
+        subject.programs.advance_planner({:startDate => "2013-12-22"})
+      }
+      
+      it 'should list holiday events' do
+        events.count.should be >= 10
+        
+        events.first.respond_to?(:air_date).should be_true
+        events.first.respond_to?(:program).should be_true
+        events.first.program.respond_to?(:tms_id).should be_true
+      end
+    end
+    
+    describe '#images' do
+      let(:images) {
+        subject.programs.images("SH014122930000")
+      }
+      
+      it 'should return images' do
+        images.count.should be >= 5
+        images.first.respond_to?(:uri).should be_true
+      end
+    end
+    
+    describe '#genres' do
+      let (:genres) {
+        subject.programs.genres
+      }
+      
+      it 'should return all genres' do
+        genres.count.should be >= 10
       end
     end
     
