@@ -21,7 +21,11 @@ module TMSAPI
     end
 
     def programs
-      TMSAPI::Resource::Programs.new(@faraday, @region)
+      TMSAPI::Resource::Programs.new(@faraday)
+    end
+    
+    def stations
+      TMSAPI::Resource::Stations.new(@faraday)
     end
 
     def default_faraday

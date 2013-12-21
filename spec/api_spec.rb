@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe TMSAPI::API, :vcr do
-  subject { client = TMSAPI::API.new :api_key => api_key}
+  subject { client = TMSAPI::API.new :api_key => api_key, :debug => false}
   let(:api_key)   { API_KEY }
   
   describe '#programs', :vcr do
@@ -107,6 +107,35 @@ describe TMSAPI::API, :vcr do
       
       it 'should return all genres' do
         genres.count.should be >= 10
+      end
+    end
+    
+  end
+  
+  describe '#stations' do
+    
+    describe '#details' do
+      let(:stations) {
+        subject.stations.details("10359")
+      }
+      
+      it 'should get station details' do
+        stations.count.should be >= 1
+        
+        stations.first.respond_to?(:station_id).should be_true
+        stations.first.respond_to?(:name).should be_true
+      end
+    end
+    
+    describe '#airings' do
+      let(:airings) {
+        subject.stations.airings("10359", {:startDateTime => "2013-12-21T18:30Z"})
+      }
+      
+      it 'should list airings' do
+        airings.count.should be >= 4
+        
+        airings.first.respond_to?(:station_id).should be_true
       end
     end
     

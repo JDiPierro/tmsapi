@@ -3,9 +3,14 @@ require 'tmsapi/model/image'
 module TMSAPI
   module Model
     class Station < Base
-      attribute :preferred_image, TMSAPI::Model::Image
-      attribute :call_sign, String
       attribute :stationId, Integer
+      attribute :name, String
+      attribute :call_sign, String
+      attribute :type, String
+      attribute :bcastLangs, Array[String]
+      attribute :edLags, Array[String]
+      attribute :channel, Integer
+      attribute :preferred_image, TMSAPI::Model::Image
       
     end
   end
