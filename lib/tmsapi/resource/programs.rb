@@ -10,13 +10,13 @@ module TMSAPI
       end
 
       def search(params)
-        get(search_path(params[:tms_id]), params).hits.map do |root|
+        get(search_path, params).hits.map do |root|
           TMSAPI::Model::Program.new root.program
         end
       end
       
       def details(params)
-        TMSAPI::Model::Program.new get(details_path, params)
+        TMSAPI::Model::Program.new get(details_path(params[:tms_id]), params)
       end
       
       def airings(params)
@@ -33,6 +33,10 @@ module TMSAPI
       
       def details_path(tms_id)
         "#{base_path}/#{tms_id}"
+      end
+      
+      def airings_path(tms_id)
+        "#{details_path(tms_id)}/airings"
       end
 
       def base_path
