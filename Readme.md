@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/JDiPierro/tmsapi.png?branch=master)](https://travis-ci.org/JDiPierro/tmsapi)
 [![Coverage Status](https://coveralls.io/repos/JDiPierro/tmsapi/badge.png?branch=master)](https://coveralls.io/r/JDiPierro/tmsapi?branch=master)
 
-A Ruby wrapper around connecting to the [TMS API](http://developer.tmsapi.com)
+A Ruby wrapper around connecting to the [TMS API](https://developer.tmsapi.com)
 
 This is my first project in Ruby so I'm using [petems/riot_api](https://github.com/petems/riot_api/) as a template.
 
