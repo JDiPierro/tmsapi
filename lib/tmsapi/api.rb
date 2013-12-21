@@ -21,7 +21,7 @@ module TMSAPI
     end
 
     def programs
-      TMSAPI::Resource::Champions.new(@faraday, @region)
+      TMSAPI::Resource::Programs.new(@faraday, @region)
     end
 
     def default_faraday

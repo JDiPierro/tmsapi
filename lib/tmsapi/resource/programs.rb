@@ -4,7 +4,7 @@ require 'date'
 
 module TMSAPI
   module Resource
-    class Champions < Base
+    class Programs < Base
 
       def initialize(connection, options = {})
         super(connection, "v1")
@@ -36,12 +36,12 @@ module TMSAPI
         end
       end
       
-      def new_shows_past_week(params = nil)
+      def new_past_week(params = nil)
         if params.nil?
           start_date = Date.today - 7
           params = {:startDate => start_date.to_s}
         end
-        get(new_shows_past_week_path,params).each do |new_program|
+        get(new_past_week_path,params).each do |new_program|
           TMSAPI::Model::Program.new new_program
         end
       end
@@ -64,7 +64,7 @@ module TMSAPI
         "#{base_path}/newShowAirings"
       end
       
-      def new_shows_past_week_path
+      def new_past_week_path
         "#{base_path}/newShowsLastWeek"
       end
       
