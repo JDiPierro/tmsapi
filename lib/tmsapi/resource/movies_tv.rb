@@ -19,6 +19,10 @@ module TMSAPI
         
         private
         
+        def airings_path
+          "#{base_path}/airings"
+        end
+        
         def base_path
           "movies"
         end

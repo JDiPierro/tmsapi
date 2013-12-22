@@ -276,4 +276,57 @@ describe TMSAPI::API, :vcr do
     
   end
   
+  describe '#movies' do
+    
+    describe '#tv' do
+      
+      describe '#airings' do
+        let(:airings) {
+          subject.movies.tv.airings( { :lineupId => "USA-NY31586-X", :startDateTime => "2013-12-22T15:30Z" } )
+        }
+        
+        it 'should tell me what movies are on tv' do
+          airings.count.should be >= 10
+          
+          airings.first.respond_to?(:start_time).should be_true
+          airings.first.respond_to?(:end_time).should be_true
+          airings.first.respond_to?(:duration).should be_true
+          airings.first.respond_to?(:channels).should be_true
+          airings.first.channels.count.should be >= 1
+          airings.first.respond_to?(:station).should be_true
+          airings.first.station.respond_to?(:call_sign).should be_true
+          airings.first.respond_to?(:program).should be_true
+          airings.first.program.respond_to?(:tms_id).should be_true
+          airings.first.program.respond_to?(:title).should be_true
+        end
+      end
+      
+    end
+    
+    describe '#theatres' do
+      
+      describe '#showings' do
+        let(:showings) {
+          subject.movies.theatres.showings({:startDate => "2013-12-22", :zip => "12804"})
+        }
+        
+        it 'should get movie showings' do
+          showings.count.should be >= 10
+          
+          showings.first.respond_to?(:release_year).should be_true
+          showings.first.respond_to?(:run_time).should be_true
+          showings.first.respond_to?(:showtimes).should be_true
+          showings.first.showtimes.first.respond_to?(:date_time).should be_true
+          showings.first.showtimes.first.respond_to?(:theatre).should be_true
+          showings.first.showtimes.first.respond_to?(:quals).should be_true
+          showings.first.showtimes.first.theatre.respond_to?(:id).should be_true
+          showings.first.showtimes.first.theatre.respond_to?(:name).should be_true
+        end
+        
+      end
+      
+    end
+    
+  end
+  
 end
