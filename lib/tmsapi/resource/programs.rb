@@ -43,7 +43,7 @@ module TMSAPI
       end
       
       def advance_planner(params = nil)
-        params = {:startDate => (Date.today + 1).to_s} unless parms
+        params = {:startDate => (Date.today + 1).to_s} unless params
         
         get(advance_planner_path,params).each do |event|
           TMSAPI::Model::Event.new event
