@@ -16,6 +16,12 @@ Not yet published to Rubygems
 
 You'll need to get an API key from [http://developer.tmsapi.com/](http://developer.tmsapi.com/).
 
+The free Public key has access to the following methods:
+movies.theatres.showings (Not Yet Implemented)
+movies.tv.airings (Not Yet Implemented)
+programs.new_shows
+sports.events.airings (Not Yet Implemented)
+
 ```ruby
 require 'tmsapi'
 
