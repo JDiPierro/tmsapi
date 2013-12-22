@@ -157,6 +157,66 @@ describe TMSAPI::API, :vcr do
       end
     end
     
+    describe '#details' do
+      let(:lineup) {
+        subject.lineups.details("USA-NY31586-X")
+      }
+      
+      it 'should tell me about the lineup' do
+        lineup.respond_to?(:type).should be_true
+        lineup.respond_to?(:name).should be_true
+      end
+      
+    end
+    
+    describe '#channels' do
+      let(:channels) {
+        subject.lineups.channels("USA-NY31586-X")
+      }
+      
+      it 'should list some channels' do
+        channels.count.should be >= 3
+        
+        channels.first.respond_to?(:preferred_image).should be_true
+        channels.first.preferred_image.respond_to?(:uri).should be_true
+        channels.first.respond_to?(:call_sign).should be_true
+      end
+    end
+    
+    describe '#stations' do
+      let(:stations) {
+        subject.lineups.stations("USA-NY31586-X")
+      }
+      
+      it 'should list some channels' do
+        stations.count.should be >= 3
+        
+        stations.first.respond_to?(:preferred_image).should be_true
+        stations.first.preferred_image.respond_to?(:uri).should be_true
+        stations.first.respond_to?(:call_sign).should be_true
+      end
+    end
+    
+    describe '#airings' do
+      let (:station_airings) {
+        subject.lineups.airings("USA-NY31586-X", { :startDateTime => "2013-12-21T23:10Z" })
+      }
+      
+      it 'should tell me whats airing' do
+        station_airings.count.should be >= 10
+        
+        station_airings.first.respond_to?(:channel).should be_true
+        station_airings.first.respond_to?(:call_sign).should be_true
+        station_airings.first.respond_to?(:airings).should be_true
+        
+        station_airings.first.airings.count.should be >= 1
+            
+        station_airings.first.airings.first.respond_to?(:start_time).should be_true
+        station_airings.first.airings.first.respond_to?(:end_time).should be_true
+        station_airings.first.airings.first.respond_to?(:duration).should be_true
+      end
+    end
+    
   end
   
 end

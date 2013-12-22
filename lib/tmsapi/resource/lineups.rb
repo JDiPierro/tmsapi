@@ -18,13 +18,13 @@ module TMSAPI
         TMSAPI::Model::Lineup.new get(details_path(lineup_id))
       end
       
-      def channels(lineup_id, params)
+      def channels(lineup_id, params = nil)
         get(channels_path(lineup_id),params).each do |station|
           TMSAPI::Model::Station.new station
         end
       end
       
-      def stations(lineup_id,params)
+      def stations(lineup_id, params = nil)
         channels(lineup_id,params)
       end
       
