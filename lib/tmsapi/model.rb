@@ -10,6 +10,8 @@ require 'tmsapi/model/station'
 require 'tmsapi/model/event'
 require 'tmsapi/model/lineup'
 require 'tmsapi/model/station_airings'
+require 'tmsapi/model/series'
+require 'tmsapi/model/episode'
 
 module TMSAPI
   module Model

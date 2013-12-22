@@ -31,6 +31,10 @@ module TMSAPI
     def lineups
       TMSAPI::Resource::Lineups.new(@faraday)
     end
+    
+    def series
+      TMSAPI::Resource::Series.new(@faraday)
+    end
 
     def default_faraday
       Faraday.new(:url => @base_url, :ssl => @ssl) do |faraday|

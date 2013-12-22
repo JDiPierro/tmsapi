@@ -219,4 +219,61 @@ describe TMSAPI::API, :vcr do
     
   end
   
+  describe '#series' do
+    
+    describe '#details' do
+      let(:series) {
+        subject.series.details("185044")
+      }
+      
+      it 'should find the series' do
+        series.respond_to?(:tms_id).should be_true
+        series.respond_to?(:title).should be_true
+        series.respond_to?(:short_description).should be_true
+        series.respond_to?(:total_seasons).should be_true
+        series.respond_to?(:total_episodes).should be_true
+      end
+    end
+    
+    describe '#airings' do
+      let(:airings) {
+        subject.series.airings("185044",
+          { :lineupId => "USA-NY31586-X",
+            :startDateTime => "2013-12-22T15:30Z",
+            :endDateTime => "2013-12-26T15:30Z"
+            })
+      }
+      
+      it 'should list airings' do
+        airings.count.should be >= 10
+        
+        airings.first.respond_to?(:start_time).should be_true
+        airings.first.respond_to?(:end_time).should be_true
+        airings.first.respond_to?(:duration).should be_true
+        airings.first.respond_to?(:station).should be_true
+        airings.first.station.respond_to?(:call_sign).should be_true
+        airings.first.station.respond_to?(:station_id).should be_true
+      end
+    end
+    
+    describe '#episodes' do
+      let(:episodes) {
+        subject.series.episodes("185044")
+      }
+      
+      it 'should return episodes' do
+        episodes.count.should be >= 10
+        
+        episodes.first.respond_to?(:tms_id).should be_true
+        episodes.first.respond_to?(:title).should be_true
+        episodes.first.respond_to?(:short_description).should be_true
+        episodes.first.respond_to?(:episode_title).should be_true
+        episodes.first.respond_to?(:season_num).should be_true
+        episodes.first.respond_to?(:episode_num).should be_true
+        
+      end
+    end
+    
+  end
+  
 end
