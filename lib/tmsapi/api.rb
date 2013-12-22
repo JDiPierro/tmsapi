@@ -35,6 +35,10 @@ module TMSAPI
     def series
       TMSAPI::Resource::Series.new(@faraday)
     end
+    
+    def movies
+      TMSAPI::Resource::Movies.new(@faraday)
+    end
 
     def default_faraday
       Faraday.new(:url => @base_url, :ssl => @ssl) do |faraday|
