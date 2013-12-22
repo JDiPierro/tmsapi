@@ -1,4 +1,5 @@
 require 'tmsapi/model/base'
+require 'tmsapi/model/caption'
 require 'tmsapi/model/airing'
 require 'tmsapi/model/award'
 require 'tmsapi/model/image'
@@ -12,6 +13,10 @@ require 'tmsapi/model/lineup'
 require 'tmsapi/model/station_airings'
 require 'tmsapi/model/series'
 require 'tmsapi/model/episode'
+require 'tmsapi/model/quality_rating'
+require 'tmsapi/model/theatre'
+require 'tmsapi/model/showtime'
+require 'tmsapi/model/movie'
 
 module TMSAPI
   module Model

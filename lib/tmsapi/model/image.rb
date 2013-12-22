@@ -1,4 +1,4 @@
-require 'tmsapi/model/base'
+require 'tmsapi/model/caption'
 
 module TMSAPI
   module Model
@@ -8,7 +8,7 @@ module TMSAPI
       attribute :width, Integer
       attribute :primary, String
       attribute :category, String
-      attribute :caption, Array[String]
+      attribute :caption, Array[TMSAPI::Model::Caption]
       
     end
   end

@@ -9,6 +9,14 @@ module TMSAPI
           super(connection, "v1")
         end
         
+        def airings(params)
+          params[:startDateTime] = Time.now.strftime("%Y-%m-%dT%H:%MZ") unless params[:startDateTime]
+          
+          get(airings_path, params).each do |airing|
+            TMSAPI::Model::Airing.new airing
+          end
+        end
+        
         private
         
         def base_path
