@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/JDiPierro/tmsapi.png?branch=master)](https://travis-ci.org/JDiPierro/tmsapi)
 [![Coverage Status](https://coveralls.io/repos/JDiPierro/tmsapi/badge.png?branch=master)](https://coveralls.io/r/JDiPierro/tmsapi?branch=master)
+[![Dependency Status](https://gemnasium.com/JDiPierro/tmsapi.png)](https://gemnasium.com/JDiPierro/tmsapi)
 
 A Ruby wrapper around connecting to the [TMS API](https://developer.tmsapi.com)
 
