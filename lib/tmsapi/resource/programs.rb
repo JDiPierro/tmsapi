@@ -28,9 +28,7 @@ module TMSAPI
       end
       
       def new_shows(params)
-        if params[:startDateTime].nil?
-          params[:startDateTime] = Time.now.strftime("%Y-%m-%dT%H:%MZ")
-        end
+        params[:startDateTime] = Time.now.strftime("%Y-%m-%dT%H:%MZ") unless params[:startDateTime]
         
         get(new_shows_path,params).each do |new_program|
           TMSAPI::Model::Airing.new new_program
@@ -38,18 +36,14 @@ module TMSAPI
       end
       
       def new_past_week(params = nil)
-        if params.nil?
-          params = {:startDate => (Date.today - 7).to_s}
-        end
+        params = {:startDate => (Date.today - 7).to_s} unless params
         get(new_past_week_path,params).each do |new_program|
           TMSAPI::Model::Program.new new_program
         end
       end
       
       def advance_planner(params = nil)
-        if params.nil?
-          params = {:startDate => (Date.today + 1).to_s}
-        end
+        params = {:startDate => (Date.today + 1).to_s} unless parms
         
         get(advance_planner_path,params).each do |event|
           TMSAPI::Model::Event.new event

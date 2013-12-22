@@ -29,9 +29,7 @@ module TMSAPI
       end
       
       def airings(lineup_id, params = nil)
-        if params.nil? 
-          params = { :startDateTime => Time.now.strftime("%Y-%m-%dT%H:%MZ") }
-        end
+        params = { :startDateTime => Time.now.strftime("%Y-%m-%dT%H:%MZ") } unless params
         get(airings_path(lineup_id),params).each do |station|
           TMSAPI::Model::Station_Airings.new station
         end
