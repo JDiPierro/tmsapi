@@ -1,5 +1,3 @@
-require 'tmsapi/resource/base'
-
 module TMSAPI
   module Resource
     module Movie
@@ -7,6 +5,12 @@ module TMSAPI
         
         def initialize(connection, options = {})
           super(connection, "v1")
+        end
+        
+        def versions(root_id, params = nil)
+          get(versions_path(root_id),params).each do |movie|
+            TMSAPI::Model::Movie.new movie
+          end
         end
         
         def airings(params)
@@ -21,6 +25,10 @@ module TMSAPI
         
         def airings_path
           "#{base_path}/airings"
+        end
+        
+        def versions_path(root_id)
+          "#{base_path}/#{root_id}/versions"
         end
         
         def base_path

@@ -31,6 +31,9 @@ describe TMSAPI::API, :vcr do
         details.respond_to?(:title).should be_true
         details.respond_to?(:long_description).should be_true
         details.respond_to?(:ratings).should be_true
+        details.ratings.count.should be >= 1
+        details.ratings.first.respond_to?(:body).should be_true
+        details.ratings.first.respond_to?(:code).should be_true
         details.respond_to?(:series_id).should be_true
       end
       
@@ -315,8 +318,8 @@ describe TMSAPI::API, :vcr do
 
           versions.first.respond_to?(:ratings).should be_true
           versions.first.ratings.count.should be >= 5
-          versions.first.ratings.respond_to?(:body).should be_true
-          versions.first.ratings.respond_to?(:code).should be_true
+          versions.first.ratings.first.respond_to?(:body).should be_true
+          versions.first.ratings.first.respond_to?(:code).should be_true
         end
       end
       
