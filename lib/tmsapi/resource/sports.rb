@@ -23,7 +23,7 @@ module TMSAPI
       end
       
       def event_airings_path(sports_id)
-        "#{details_path(sports_id)}/events"
+        "#{details_path(sports_id)}/events/airings"
       end
       
       def base_path

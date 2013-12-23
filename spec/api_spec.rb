@@ -351,4 +351,31 @@ describe TMSAPI::API, :vcr do
     
   end
   
+  describe '#sports' do
+    describe '#event_airings' do
+      let(:airings) {
+        subject.sports.event_airings(59, { :lineupId => "USA-NY31586-X", :startDateTime => "2013-12-23T13:00Z" } )
+      }
+      
+      it 'should find some airings' do
+        airings.count.should be >= 10
+        
+        airings.first.respond_to?(:start_time).should be_true
+        airings.first.respond_to?(:end_time).should be_true
+        airings.first.respond_to?(:duration).should be_true
+        airings.first.respond_to?(:program).should be_true
+        airings.first.program.respond_to?(:tms_id).should be_true
+        airings.first.program.respond_to?(:game_date).should be_true
+        airings.first.program.respond_to?(:event_title).should be_true
+        airings.first.program.respond_to?(:root_id).should be_true
+        airings.first.program.respond_to?(:title).should be_true
+        airings.first.program.respond_to?(:teams).should be_true
+        airings.first.program.teams.last.respond_to?(:name).should be_true
+        airings.first.program.teams.last.respond_to?(:team_brand_id).should be_true
+        airings.first.program.teams.last.respond_to?(:is_home).should be_true
+      end
+      
+    end
+  end
+  
 end

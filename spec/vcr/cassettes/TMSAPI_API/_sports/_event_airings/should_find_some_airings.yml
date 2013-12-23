@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1/sports/59/events/airings?api_key=api_key_YYYYYYYYYYYYYYYYYYYYY&lineupId=USA-NY31586-X&startDateTime=2013-12-23T13%3A00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - tmsapi rubygem v0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-mashery-responder:
+      - prod-j-worker-lax-01.mashery.com
+      accept-ranges:
+      - bytes
+      access-control-allow-headers:
+      - origin, content-type, accept
+      access-control-allow-methods:
+      - GET, POST, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-content-type:
+      - '*/*'
+      access-control-max-age:
+      - '86400'
+      age:
+      - '0'
+      content-type:
+      - application/json;charset="UTF-8"
+      date:
+      - Mon, 23 Dec 2013 19:53:49 GMT
+      server:
+      - Jetty(6.1.24)
+      via:
+      - 1.1 varnish
+      x-varnish:
+      - '2017365900'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"startTime":"2013-12-23T11:30Z","endTime":"2013-12-23T14:00Z","duration":150,"qualifiers":["HDTV"],"channels":["727"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD3","stationId":"72831"},"stationId":"72831","program":{"tmsId":"SP002858060000","rootId":"10190471","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Boston Celtics at Indiana
+        Pacers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Boston
+        Celtics","teamBrandId":"401"},{"name":"Indiana Pacers","isHome":true,"teamBrandId":"410"}],"entityType":"Sports"}},{"startTime":"2013-12-23T11:30Z","endTime":"2013-12-23T14:00Z","duration":150,"channels":["736","777"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/20812/s20812_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM3","stationId":"20812"},"stationId":"20812","program":{"tmsId":"SP002858060000","rootId":"10190471","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Boston Celtics at Indiana
+        Pacers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Boston
+        Celtics","teamBrandId":"401"},{"name":"Indiana Pacers","isHome":true,"teamBrandId":"410"}],"entityType":"Sports"}},{"startTime":"2013-12-23T12:00Z","endTime":"2013-12-23T14:30Z","duration":150,"qualifiers":["HDTV"],"channels":["728"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD4","stationId":"72832"},"stationId":"72832","program":{"tmsId":"SP002858080000","rootId":"10190475","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Minnesota Timberwolves
+        at Los Angeles Clippers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Minnesota
+        Timberwolves","teamBrandId":"416"},{"name":"Los Angeles Clippers","isHome":true,"teamBrandId":"411"}],"entityType":"Sports"}},{"startTime":"2013-12-23T12:00Z","endTime":"2013-12-23T14:30Z","duration":150,"qualifiers":["HDTV","Subject
+        to blackout"],"channels":["725"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD1","stationId":"55597"},"stationId":"55597","program":{"tmsId":"SP002858060000","rootId":"10190471","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Boston Celtics at Indiana
+        Pacers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Boston
+        Celtics","teamBrandId":"401"},{"name":"Indiana Pacers","isHome":true,"teamBrandId":"410"}],"entityType":"Sports"}},{"startTime":"2013-12-23T12:00Z","endTime":"2013-12-23T14:30Z","duration":150,"channels":["737","778"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/21044/s21044_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM4","stationId":"21044"},"stationId":"21044","program":{"tmsId":"SP002858080000","rootId":"10190475","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Minnesota Timberwolves
+        at Los Angeles Clippers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Minnesota
+        Timberwolves","teamBrandId":"416"},{"name":"Los Angeles Clippers","isHome":true,"teamBrandId":"411"}],"entityType":"Sports"}},{"startTime":"2013-12-23T12:00Z","endTime":"2013-12-23T14:30Z","duration":150,"qualifiers":["Subject
+        to blackout"],"channels":["734","775"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/20810/s20810_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM1","stationId":"20810"},"stationId":"20810","program":{"tmsId":"SP002858060000","rootId":"10190471","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Boston Celtics at Indiana
+        Pacers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Boston
+        Celtics","teamBrandId":"401"},{"name":"Indiana Pacers","isHome":true,"teamBrandId":"410"}],"entityType":"Sports"}},{"startTime":"2013-12-23T12:30Z","endTime":"2013-12-23T15:00Z","duration":150,"qualifiers":["HDTV","Subject
+        to blackout"],"channels":["726"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD2","stationId":"72809"},"stationId":"72809","program":{"tmsId":"SP002858070000","rootId":"10190473","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Toronto Raptors at
+        Oklahoma City Thunder","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Toronto
+        Raptors","teamBrandId":"427"},{"name":"Oklahoma City Thunder","isHome":true,"teamBrandId":"426"}],"entityType":"Sports"}},{"startTime":"2013-12-23T12:30Z","endTime":"2013-12-23T15:00Z","duration":150,"qualifiers":["Subject
+        to blackout"],"channels":["735","776"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/20811/s20811_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM2","stationId":"20811"},"stationId":"20811","program":{"tmsId":"SP002858070000","rootId":"10190473","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Toronto Raptors at
+        Oklahoma City Thunder","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Toronto
+        Raptors","teamBrandId":"427"},{"name":"Oklahoma City Thunder","isHome":true,"teamBrandId":"426"}],"entityType":"Sports"}},{"startTime":"2013-12-23T13:00Z","endTime":"2013-12-23T15:00Z","duration":120,"channels":["372"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/26077/s26077_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"FCSA","stationId":"26077"},"stationId":"26077","program":{"tmsId":"SP002888870000","rootId":"10269020","seriesId":"191260","title":"College
+        Basketball","titleLang":"en","genres":[],"eventTitle":"North Carolina A&T
+        at St. Louis","gameDate":"2013-12-21","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"North
+        Carolina A&T","teamBrandId":"678"},{"name":"St. Louis","isHome":true,"teamBrandId":"721"}],"entityType":"Sports"}},{"startTime":"2013-12-23T13:00Z","endTime":"2013-12-23T15:00Z","duration":120,"qualifiers":["Tape"],"channels":["373"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/26078/s26078_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"FCSC","stationId":"26078"},"stationId":"26078","program":{"tmsId":"SP002875090000","rootId":"10258204","seriesId":"191260","title":"College
+        Basketball","titleLang":"en","genres":[],"eventTitle":"South Dakota State
+        at North Dakota","gameDate":"2013-12-21","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"South
+        Dakota State","teamBrandId":"735"},{"name":"North Dakota","isHome":true,"teamBrandId":"4994"}],"entityType":"Sports"}},{"startTime":"2013-12-23T14:30Z","endTime":"2013-12-23T17:00Z","duration":150,"qualifiers":["HDTV"],"channels":["727"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD3","stationId":"72831"},"stationId":"72831","program":{"tmsId":"SP002858060000","rootId":"10190471","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Boston Celtics at Indiana
+        Pacers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Boston
+        Celtics","teamBrandId":"401"},{"name":"Indiana Pacers","isHome":true,"teamBrandId":"410"}],"entityType":"Sports"}},{"startTime":"2013-12-23T14:30Z","endTime":"2013-12-23T17:00Z","duration":150,"channels":["736","777"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/20812/s20812_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM3","stationId":"20812"},"stationId":"20812","program":{"tmsId":"SP002858060000","rootId":"10190471","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Boston Celtics at Indiana
+        Pacers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Boston
+        Celtics","teamBrandId":"401"},{"name":"Indiana Pacers","isHome":true,"teamBrandId":"410"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:00Z","endTime":"2013-12-23T17:30Z","duration":150,"qualifiers":["HDTV"],"channels":["728"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD4","stationId":"72832"},"stationId":"72832","program":{"tmsId":"SP002858080000","rootId":"10190475","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Minnesota Timberwolves
+        at Los Angeles Clippers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Minnesota
+        Timberwolves","teamBrandId":"416"},{"name":"Los Angeles Clippers","isHome":true,"teamBrandId":"411"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:00Z","endTime":"2013-12-23T17:00Z","duration":120,"channels":["372"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/26077/s26077_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"FCSA","stationId":"26077"},"stationId":"26077","program":{"tmsId":"SP002872050000","rootId":"10257609","seriesId":"191260","title":"College
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Tulsa at Texas Christian","gameDate":"2013-12-21","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Tulsa","teamBrandId":"774"},{"name":"Texas
+        Christian","isHome":true,"teamBrandId":"761"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:00Z","endTime":"2013-12-23T17:30Z","duration":150,"qualifiers":["HDTV","Subject
+        to blackout"],"channels":["725"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD1","stationId":"55597"},"stationId":"55597","program":{"tmsId":"SP002858080000","rootId":"10190475","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Minnesota Timberwolves
+        at Los Angeles Clippers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Minnesota
+        Timberwolves","teamBrandId":"416"},{"name":"Los Angeles Clippers","isHome":true,"teamBrandId":"411"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:00Z","endTime":"2013-12-23T17:00Z","duration":120,"channels":["382"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"BIGNY","stationId":"65806"},"stationId":"65806","program":{"tmsId":"SP002878520000","rootId":"10258888","seriesId":"191260","title":"College
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Kennesaw State at Indiana","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Kennesaw
+        State","teamBrandId":"4723"},{"name":"Indiana","isHome":true,"teamBrandId":"604"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:00Z","endTime":"2013-12-23T17:30Z","duration":150,"channels":["737","778"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/21044/s21044_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM4","stationId":"21044"},"stationId":"21044","program":{"tmsId":"SP002858080000","rootId":"10190475","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Minnesota Timberwolves
+        at Los Angeles Clippers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Minnesota
+        Timberwolves","teamBrandId":"416"},{"name":"Los Angeles Clippers","isHome":true,"teamBrandId":"411"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:00Z","endTime":"2013-12-23T17:30Z","duration":150,"qualifiers":["Subject
+        to blackout"],"channels":["734","775"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/20810/s20810_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM1","stationId":"20810"},"stationId":"20810","program":{"tmsId":"SP002858080000","rootId":"10190475","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Minnesota Timberwolves
+        at Los Angeles Clippers","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Minnesota
+        Timberwolves","teamBrandId":"416"},{"name":"Los Angeles Clippers","isHome":true,"teamBrandId":"411"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:30Z","endTime":"2013-12-23T18:00Z","duration":150,"qualifiers":["HDTV","Subject
+        to blackout"],"channels":["726"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/generic/generic_sources_h3.png"},"callSign":"TMHD2","stationId":"72809"},"stationId":"72809","program":{"tmsId":"SP002858070000","rootId":"10190473","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Toronto Raptors at
+        Oklahoma City Thunder","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Toronto
+        Raptors","teamBrandId":"427"},{"name":"Oklahoma City Thunder","isHome":true,"teamBrandId":"426"}],"entityType":"Sports"}},{"startTime":"2013-12-23T15:30Z","endTime":"2013-12-23T18:00Z","duration":150,"qualifiers":["Subject
+        to blackout"],"channels":["735","776"],"station":{"preferredImage":{"uri":"http://demo.tmsimg.com/sources/h3/NowShowing/20811/s20811_h3_aa.png","height":"270","width":"360","primary":"true","category":"Logo"},"callSign":"TEAM2","stationId":"20811"},"stationId":"20811","program":{"tmsId":"SP002858070000","rootId":"10190473","seriesId":"191276","title":"NBA
+        Basketball","titleLang":"en","genres":[],"eventTitle":"Toronto Raptors at
+        Oklahoma City Thunder","gameDate":"2013-12-22","preferredImage":{"uri":"http://demo.tmsimg.com/tvbanners/generic/generic_tvbanners_v5.png"},"teams":[{"name":"Toronto
+        Raptors","teamBrandId":"427"},{"name":"Oklahoma City Thunder","isHome":true,"teamBrandId":"426"}],"entityType":"Sports"}}]'
+    http_version: 
+  recorded_at: Mon, 23 Dec 2013 19:53:49 GMT
+recorded_with: VCR 2.8.0
