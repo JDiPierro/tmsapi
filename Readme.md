@@ -24,15 +24,32 @@ movies.tv.airings
 
 programs.new_shows
 
-sports.event_airings (Not Yet Implemented)
+sports.event_airings
 
 
 ```ruby
 require 'tmsapi'
 
 # Create Instace of the API
-client = TMSAPI::API.new :api_key => 'API_KEY_HERE', :debug => true
+tms = TMSAPI::API.new :api_key => 'API_KEY_HERE'
 
+# Get all movie showtimes for Austin Texas
+movie_showings = tms.movies.theatres.showings({ :zip => "78701" })
+
+# Print out the movie name, theatre name, and date/time of the showing.
+movie_showings.each do |movie|
+  movie.showtimes.each do |showing|
+    puts "#{movie.title} is playing at '#{showing.theatre.name}' at #{showing.date_time}."
+  end
+end
+
+# 12 Years a Slave is playing at 'Violet Crown Cinema' at 2013-12-23T12:45.
+# A Christmas Story is playing at 'Alamo Drafthouse at the Ritz' at 2013-12-23T16:00.
+# American Hustle is playing at 'Violet Crown Cinema' at 2013-12-23T11:00.
+# American Hustle is playing at 'Violet Crown Cinema' at 2013-12-23T13:40.
+# American Hustle is playing at 'Violet Crown Cinema' at 2013-12-23T16:20.
+# American Hustle is playing at 'Violet Crown Cinema' at 2013-12-23T19:00.
+# American Hustle is playing at 'Violet Crown Cinema' at 2013-12-23T21:40.
 ```
 
 ## Contributing
