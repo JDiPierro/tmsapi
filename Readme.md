@@ -13,7 +13,7 @@ This is my first project in Ruby so I'm using [petems/riot_api](https://github.c
 Add this line to your application's Gemfile
 
 ```ruby
-gem tmsapi
+gem 'tmsapi'
 ```
 
 and then execute:
