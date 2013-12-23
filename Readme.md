@@ -25,7 +25,7 @@ bundle
 or install it yourself with:
 
 ```ruby
-gem install tmsapi
+gem install 'tmsapi'
 ```
 
 ## Usage:
