@@ -6,6 +6,9 @@ module TMSAPI
     class Movie < Program
       attribute :release_year, Integer
       attribute :quality_rating, TMSAPI::Model::Quality_Rating
+      attribute :sub_type, String
+      attribute :directors, Array[String]
+      attribute :advisories, Array[String]
       attribute :run_time, String
       attribute :showtimes, Array[TMSAPI::Model::Showtime]
     end

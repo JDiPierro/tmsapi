@@ -301,6 +301,25 @@ describe TMSAPI::API, :vcr do
         end
       end
       
+      describe '#versions' do
+        let(:versions) {
+          subject.movies.tv.versions("3542039")
+        }
+        
+        it 'should tell me about that movie' do
+          versions.count.should be >= 5
+          
+          versions.first.respond_to?(:tms_id).should be_true
+          versions.first.respond_to?(:title).should be_true
+          versions.first.respond_to?(:short_description).should be_true
+
+          versions.first.respond_to?(:ratings).should be_true
+          versions.first.ratings.count.should be >= 5
+          versions.first.ratings.respond_to?(:body).should be_true
+          versions.first.ratings.respond_to?(:code).should be_true
+        end
+      end
+      
     end
     
     describe '#theatres' do

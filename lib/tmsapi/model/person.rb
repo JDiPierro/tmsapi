@@ -2,11 +2,11 @@ module TMSAPI
   module Model
     class Person < Base
       attribute :person_id, Integer
-      attribute :name_Id, Integer
+      attribute :name_id, Integer
       attribute :name, String
       attribute :role, String
-      attribute :characterName, String
-      attribute :billingOrder, Integer
+      attribute :character_name, String
+      attribute :billing_order, Integer
     end
   end
 end
