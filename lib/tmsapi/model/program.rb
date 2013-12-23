@@ -22,7 +22,7 @@ module TMSAPI
       attribute :top_cast, Array[String]
       attribute :orig_air_date, String
       attribute :preferred_image, TMSAPI::Model::Image
-      attribute :subtype, String
+      attribute :sub_type, String
       attribute :awards, Array[TMSAPI::Model::Award]
       attribute :cast, Array[TMSAPI::Model::Person]
       attribute :crew, Array[TMSAPI::Model::Person]

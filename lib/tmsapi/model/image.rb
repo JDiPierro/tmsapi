@@ -8,6 +8,7 @@ module TMSAPI
       attribute :width, Integer
       attribute :primary, String
       attribute :category, String
+      attribute :tier, String
       attribute :caption, TMSAPI::Model::Caption
       
     end
