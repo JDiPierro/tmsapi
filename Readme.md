@@ -10,7 +10,23 @@ This is my first project in Ruby so I'm using [petems/riot_api](https://github.c
 
 ## Installation
 
-Not yet published to Rubygems
+Add this line to your application's Gemfile
+
+```ruby
+gem tmsapi
+```
+
+and then execute:
+
+```ruby
+bundle
+```
+
+or install it yourself with:
+
+```ruby
+gem install tmsapi
+```
 
 ## Usage:
 
