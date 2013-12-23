@@ -41,3 +41,5 @@ def capture_stdout &block
 ensure
   $stdout = old_stdout
 end
+
+FactoryGirl.find_definitions
