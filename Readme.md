@@ -24,7 +24,7 @@ movies.tv.airings
 
 programs.new_shows
 
-sports.events.airings (Not Yet Implemented)
+sports.event_airings (Not Yet Implemented)
 
 
 ```ruby

@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = 'tmsapi'
   gem.version       = TMSAPI::VERSION
   gem.authors       = ['Justin DiPierro']
-  gem.email         = ['jdipierro@tribune.com']
+  gem.email         = ['dipierroj@gmail.com']
   gem.description   = %q{A Ruby gem for the TMS API}
   gem.summary       = %q{This gem wraps the TMS API documented at https://developer.tmsapi.com}
   gem.homepage      = 'https://github.com/jdipierro/tmsapi'
