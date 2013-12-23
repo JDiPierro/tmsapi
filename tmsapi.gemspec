@@ -29,8 +29,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'virtus', '~> 1.0.1'
 
   gem.add_development_dependency 'rspec', '~> 2.0'
-  gem.add_development_dependency 'guard', '~> 2.1.0'
-  gem.add_development_dependency 'guard-rspec', '~> 4.0.1'
 
   if RUBY_PLATFORM =~ /darwin/i
     gem.add_development_dependency 'rb-fsevent', '~> 0.9.3'
