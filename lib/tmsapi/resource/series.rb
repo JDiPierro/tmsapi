@@ -7,7 +7,7 @@ module TMSAPI
       end
       
       def details(series_id, params = nil)
-        TMSAPI::Model::Series.new get(details_path(series_id), params)
+        TMSAPI::Model::Program.new get(details_path(series_id), params)
       end
       
       def airings(series_id, params)
