@@ -16,7 +16,7 @@ module TMSAPI
       attribute :station_id, Integer
       attribute :program, TMSAPI::Model::Program
       attribute :release_year, Integer
-      attribute :quality_rating, TMSAPI::Model::Quality_Rating
+      attribute :quality_rating, TMSAPI::Model::QualityRating
       attribute :entity_type, String
     
     end
