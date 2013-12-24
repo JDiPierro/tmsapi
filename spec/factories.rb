@@ -8,19 +8,15 @@ FactoryGirl.define do
     long_description    "No, this animated series is not about anthropomorphic chewing gum, it's about a young cat named Gumball Watterson. Gumball has a penchant for getting into trouble, often resulting from schemes he comes up with, but he never seems to learn his lesson. Gumball's best friend is a fish named Darwin, who used to be the family pet until he grew legs and became part of the family. Gumball resents his younger sister, Anais, because she is the smartest member of the family. Gumball's mother is the breadwinner in the family, working long hours at the rainbow factory, and his father stays at home watching TV and playing video games."
     description_lang    "en"
     genres              ["Children", "Comedy", "Animated"]
+    preferred_image     { build(:image) }
+    ratings             { build_list(:rating, 3) }
+    recommendations     { build_list(:recommendation, 2) }
+    cast                { build_list(:person, 4) }
     orig_air_date       "2011-05-03"
     sub_type            "Series"
     total_seasons       1
     total_episodes      485
     entity_type         "Show"
-    
-    association :preferred_image, factory: :image, strategy: :build
-    
-    after(:build) { |user|
-      user.ratings = build_list(:rating, 3)
-      user.recommendations = build_list(:recommendation, 2)
-      user.cast = build_list(:person, 4)
-    }
     
   end
   
