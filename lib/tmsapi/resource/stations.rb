@@ -20,7 +20,7 @@ module TMSAPI
         end
       end
       
-      def airings(stationId, params)
+      def airings(stationId, params = nil)
         params = { :startDateTime => Time.now.strftime("%Y-%m-%dT%H:%MZ")} unless params
         
         get(airings_path(stationId),params).each do |airing|
