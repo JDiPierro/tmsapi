@@ -36,7 +36,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'vcr',     '~> 2.4'
   gem.add_development_dependency 'fakeweb', '~> 1.3.0'
-  gem.add_development_dependency 'rake',  '~> 10.1.0'
+  gem.add_development_dependency 'rake',  '~> 10.1.1'
   gem.add_development_dependency 'coveralls', '~> 0.7.0'
   gem.add_development_dependency 'factory_girl', '~> 4.0'
 end
