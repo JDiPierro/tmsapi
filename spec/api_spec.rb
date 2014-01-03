@@ -352,6 +352,19 @@ describe TMSAPI::API, :vcr do
   end
   
   describe '#sports' do
+    describe '#details' do
+      let(:details) {
+        subject.sports.details
+      }
+      
+      it 'should find details and organizations for all sports' do
+        details.count.should be >= 10
+        
+        details.first.respond_to?(:sports_id).should be_true
+        details.first.respond_to?(:sports_name).should be_true
+      end
+    end
+    
     describe '#event_airings' do
       let(:airings) {
         subject.sports.event_airings(59, { :lineupId => "USA-NY31586-X", :startDateTime => "2013-12-23T13:00Z" } )
@@ -374,8 +387,148 @@ describe TMSAPI::API, :vcr do
         airings.first.program.teams.last.respond_to?(:team_brand_id).should be_true
         airings.first.program.teams.last.respond_to?(:is_home).should be_true
       end
-      
     end
+    
+    describe '#nonevent_airings' do
+      let(:airings) {
+        subject.sports.nonevent_airings({:lineupId => "USA-NY31586-X", :startDateTime => "2014-01-04T13:00Z"})
+      }
+      
+      it 'should return nonevent airings' do
+        airings.count.should be >= 10
+        
+        airings.first.respond_to?(:start_time).should be_true
+        airings.first.respond_to?(:end_time).should be_true
+        airings.first.respond_to?(:duration).should be_true
+        airings.first.respond_to?(:program).should be_true
+        
+        airings.first.program.respond_to?(:tms_id).should be_true
+        airings.first.program.respond_to?(:root_id).should be_true
+        airings.first.program.respond_to?(:title).should be_true
+      end
+    end
+    
+    describe '#universities' do
+      let(:universities) {
+        subject.sports.universities
+      }
+      
+      it 'should return all universities' do
+        universities.count.should be >= 10
+        
+        universities.first.respond_to?(:university_id).should be_true
+        universities.first.respond_to?(:university_name).should be_true
+        universities.first.respond_to?(:nick_name).should be_true
+        universities.first.respond_to?(:preferred_image).should be_true
+      end
+    end
+    
+    describe '#organization_teams' do
+      let(:teams_i) {
+        subject.sports.organization_teams(17)
+      }
+      
+      let(:teams_s) {
+        subject.sports.organization_teams("17")
+      }
+      
+      it 'should return organization information and teams with an int param' do
+        teams_i.count.should be == 1
+        
+        teams_i.first.respond_to?(:organization_name).should be_true
+        teams_i.first.respond_to?(:preferred_image).should be_true
+        teams_i.first.respond_to?(:teams).should be_true
+        teams_i.first.teams.first.respond_to?(:team_brand_id).should be_true
+        teams_i.first.teams.first.respond_to?(:team_brand_name).should be_true
+      end
+      
+      it 'should return organization information and teams with a string param' do
+        teams_s.count.should be == 1
+        
+        teams_s.first.respond_to?(:organization_name).should be_true
+        teams_s.first.respond_to?(:preferred_image).should be_true
+        teams_s.first.respond_to?(:teams).should be_true
+        teams_s.first.teams.first.respond_to?(:team_brand_id).should be_true
+        teams_s.first.teams.first.respond_to?(:team_brand_name).should be_true
+      end
+    end
+    
+    describe '#university_teams' do
+      let(:teams) {
+        subject.sports.university_teams("1")
+      }
+      
+      it 'should return teams for this university' do
+        teams.count.should be >= 10
+        
+        teams.first.respond_to?(:team_brand_id).should be_true
+        teams.first.respond_to?(:team_brand_name).should be_true
+        teams.first.respond_to?(:university).should be_true
+        teams.first.university.respond_to?(:university_id).should be_true
+        teams.first.university.respond_to?(:university_name).should be_true
+        teams.first.respond_to?(:nick_name).should be_true
+        teams.first.respond_to?(:proper_name).should be_true
+        teams.first.respond_to?(:sports_id).should be_true
+      end
+    end
+    
+    describe '#team_details' do
+      let(:team) {
+        subject.sports.team_details(1)
+      }
+      
+      it 'should have team information' do
+        team.first.respond_to?(:team_brand_id).should be_true
+        team.first.respond_to?(:team_brand_name).should be_true
+        team.first.respond_to?(:abbreviation).should be_true
+        team.first.respond_to?(:nick_name).should be_true
+        team.first.respond_to?(:proper_name).should be_true
+        team.first.respond_to?(:sports_id).should be_true
+        team.first.respond_to?(:preferred_image).should be_true
+      end
+    end
+    
+    describe '#team_airings' do
+      let(:airings) {
+        subject.sports.team_airings(37,{:lineupId => "USA-NY31586-X", :startDateTime => "2014-01-03T15:40Z", :endDateTime => "2014-01-14T15:00Z"})
+      }
+      
+      it 'should return airings' do
+        airings.count.should be >= 1
+        
+        airings.first.respond_to?(:start_time).should be_true
+        airings.first.respond_to?(:end_time).should be_true
+        airings.first.respond_to?(:qualifiers).should be_true
+        airings.first.qualifiers.count.should be >= 3
+        airings.first.respond_to?(:station_id).should be_true
+        airings.first.respond_to?(:program).should be_true
+        airings.first.program.respond_to?(:tms_id).should be_true
+        
+      end
+    end
+    
+    describe '#organization_airings' do
+      let(:airings) {
+        subject.sports.organization_airings("17,19",{:lineupId => "USA-TX42500-X", :startDateTime => "2014-01-03T15:40Z"})
+      }
+      
+      it 'should return airings' do
+        airings.count.should be >= 3
+        
+        airings.first.respond_to?(:start_time).should be_true
+        airings.first.respond_to?(:end_time).should be_true
+        airings.first.respond_to?(:duration).should be_true
+        airings.first.respond_to?(:channels).should be_true
+        airings.first.respond_to?(:station).should be_true
+        airings.first.station.respond_to?(:call_sign).should be_true
+        airings.first.respond_to?(:station_id).should be_true
+        airings.first.respond_to?(:program).should be_true
+        airings.first.program.respond_to?(:tms_id).should be_true
+        airings.first.program.respond_to?(:root_id).should be_true
+        airings.first.program.respond_to?(:title).should be_true
+        
+      end
+    end
+    
   end
-  
 end

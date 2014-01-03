@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1/sports/teams/37/airings?api_key=api_key_YYYYYYYYYYYYYYYYYYYYY&lineupId=USA-NY31586-X&startDateTime=2014-01-03T15%3A40Z&endDateTime=2014-01-14T15%3A00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - tmsapi rubygem v0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      !binary "eC1tYXNoZXJ5LXJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci1sYXgtMDIubWFzaGVyeS5jb20=
+      !binary "YWNjZXB0LXJhbmdlcw==":
+      - !binary |-
+        Ynl0ZXM=
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctaGVhZGVycw==":
+      - !binary |-
+        b3JpZ2luLCBjb250ZW50LXR5cGUsIGFjY2VwdA==
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctbWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NULCBPUFRJT05T
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "YWNjZXNzLWNvbnRyb2wtY29udGVudC10eXBl":
+      - !binary |-
+        Ki8q
+      !binary "YWNjZXNzLWNvbnRyb2wtbWF4LWFnZQ==":
+      - !binary |-
+        ODY0MDA=
+      !binary "YWdl":
+      - !binary |-
+        MA==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PSJVVEYtOCI=
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        RnJpLCAwMyBKYW4gMjAxNCAxOToxNDoxNyBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        SmV0dHkoNi4xLjI0KQ==
+      !binary "dmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "eC12YXJuaXNo":
+      - !binary |-
+        MTI4NzIxMzkyOQ==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sic3RhcnRUaW1lIjoiMjAxNC0wMS0wNVQxODowMFoiLCJlbmRUaW1lIjoi
+        MjAxNC0wMS0wNVQyMTozMFoiLCJkdXJhdGlvbiI6MjEwLCJxdWFsaWZpZXJz
+        IjpbIkNDIiwiTGl2ZSIsIk5ldyJdLCJjaGFubmVscyI6WyIxMjA5IiwiMDA2
+        Il0sInN0YXRpb24iOnsicHJlZmVycmVkSW1hZ2UiOnsidXJpIjoiaHR0cDov
+        L2RlbW8udG1zaW1nLmNvbS9zb3VyY2VzL2dlbmVyaWMvZ2VuZXJpY19zb3Vy
+        Y2VzX2gzLnBuZyJ9LCJjYWxsU2lnbiI6IldSR0IiLCJzdGF0aW9uSWQiOiIx
+        MTgxOCJ9LCJzdGF0aW9uSWQiOiIxMTgxOCIsInByb2dyYW0iOnsicm9vdElk
+        IjoiMTAzMDA3MTYiLCJzZXJpZXNJZCI6IjE5MTI3NyIsInRtc0lkIjoiRVAw
+        MDAwMzEyODExOTUifX1d
+    http_version: 
+  recorded_at: Fri, 03 Jan 2014 19:14:17 GMT
+recorded_with: VCR 2.8.0

@@ -3,6 +3,7 @@ require "tmsapi/model/image"
 require "tmsapi/model/person"
 require "tmsapi/model/rating"
 require "tmsapi/model/recommendation"
+require "tmsapi/model/team"
 
 module TMSAPI
   module Model
@@ -30,6 +31,7 @@ module TMSAPI
       attribute :total_seasons, Integer
       attribute :total_episodes, Integer
       attribute :entity_type, String
+      attribute :teams, Array[TMSAPI::Model::Team]
       
     end
   end

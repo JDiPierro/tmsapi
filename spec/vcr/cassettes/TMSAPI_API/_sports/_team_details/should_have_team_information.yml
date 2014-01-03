@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1/sports/teams/1?api_key=api_key_YYYYYYYYYYYYYYYYYYYYY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - tmsapi rubygem v0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      !binary "eC1tYXNoZXJ5LXJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci1sYXgtMDIubWFzaGVyeS5jb20=
+      !binary "YWNjZXB0LXJhbmdlcw==":
+      - !binary |-
+        Ynl0ZXM=
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctaGVhZGVycw==":
+      - !binary |-
+        b3JpZ2luLCBjb250ZW50LXR5cGUsIGFjY2VwdA==
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctbWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NULCBPUFRJT05T
+      !binary "YWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "YWNjZXNzLWNvbnRyb2wtY29udGVudC10eXBl":
+      - !binary |-
+        Ki8q
+      !binary "YWNjZXNzLWNvbnRyb2wtbWF4LWFnZQ==":
+      - !binary |-
+        ODY0MDA=
+      !binary "YWdl":
+      - !binary |-
+        MA==
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PSJVVEYtOCI=
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        RnJpLCAwMyBKYW4gMjAxNCAxODo1MzoxMiBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        SmV0dHkoNi4xLjI0KQ==
+      !binary "dmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "eC12YXJuaXNo":
+      - !binary |-
+        MTMyOTQ5MTA0NA==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sidGVhbUJyYW5kSWQiOiIxIiwidGVhbUJyYW5kTmFtZSI6IkFyaXpvbmEg
+        RGlhbW9uZGJhY2tzIiwiYWJicmV2aWF0aW9uIjoiQVJJIiwibmlja05hbWUi
+        OiJEaWFtb25kYmFja3MiLCJwcm9wZXJOYW1lIjoiQXJpem9uYSIsInNwb3J0
+        c0lkIjoiNTgiLCJwcmVmZXJyZWRJbWFnZSI6eyJ1cmkiOiJodHRwOi8vZGVt
+        by50bXNpbWcuY29tL3Nwb3J0c2xvZ29zL2gzL0FsbFBob3Rvcy8xL3QxX2xf
+        aDNfYWEucG5nIiwiaGVpZ2h0IjoiMjcwIiwid2lkdGgiOiIzNjAiLCJwcmlt
+        YXJ5IjoidHJ1ZSIsImNhdGVnb3J5IjoiTG9nbyJ9fV0=
+    http_version: 
+  recorded_at: Fri, 03 Jan 2014 18:53:12 GMT
+recorded_with: VCR 2.8.0
