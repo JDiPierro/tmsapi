@@ -1,0 +1,211 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.tmsapi.com/v1/celebs/13461?api_key=api_key_YYYYYYYYYYYYYYYYYYYYY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - tmsapi rubygem v0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-mashery-responder:
+      - prod-j-worker-lax-04.mashery.com
+      accept-ranges:
+      - bytes
+      access-control-allow-headers:
+      - origin, content-type, accept
+      access-control-allow-methods:
+      - GET, POST, OPTIONS
+      access-control-allow-origin:
+      - "*"
+      access-control-content-type:
+      - "*/*"
+      access-control-max-age:
+      - '86400'
+      age:
+      - '0'
+      content-type:
+      - application/json;charset="UTF-8"
+      date:
+      - Sun, 02 Feb 2014 00:21:27 GMT
+      server:
+      - Jetty(6.1.24)
+      via:
+      - 1.1 varnish
+      x-varnish:
+      - '1868406469'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "{\"personId\":\"13461\",\"entityType\":\"Celebrity\",\"name\":{\"first\":\"Clint\",\"last\":\"Eastwood\",\"nameId\":\"13461\"},\"birthPlace\":\"San
+        Francisco, California\",\"birthDate\":\"1930-05-31\",\"gender\":\"M\",\"preferredImage\":{\"uri\":\"http://demo.tmsimg.com/celebs/v3/AllPhotos/13461/13461_v3_ba.jpg\",\"height\":\"360\",\"width\":\"270\",\"category\":\"Photo
+        - headshot\"},\"awards\":[{\"awardId\":\"1\",\"rootId\":\"35226\",\"tmsId\":\"MV001529640000\",\"title\":\"Million
+        Dollar Baby\",\"awardName\":\"Academy Award\",\"category\":\"Best Actor\",\"awardCatId\":\"1\",\"year\":\"2004\"},{\"awardId\":\"3\",\"rootId\":\"35226\",\"tmsId\":\"MV001529640000\",\"title\":\"Million
+        Dollar Baby\",\"awardName\":\"Screen Actors Guild Awards\",\"category\":\"Outstanding
+        Performance by a Cast in a Motion Picture\",\"awardCatId\":\"49\",\"year\":\"2004\"},{\"awardId\":\"3\",\"awardName\":\"Screen
+        Actors Guild Awards\",\"category\":\"Life Achievement Award\",\"awardCatId\":\"52\",\"year\":\"2002\",\"won\":\"true\"},{\"awardId\":\"1\",\"rootId\":\"14136\",\"tmsId\":\"MV000353840000\",\"title\":\"Unforgiven\",\"awardName\":\"Academy
+        Award\",\"category\":\"Best Actor\",\"awardCatId\":\"1\",\"year\":\"1992\"},{\"awardId\":\"2\",\"awardName\":\"Golden
+        Globe\",\"category\":\"Cecille B. DeMille Award\",\"awardCatId\":\"38\",\"year\":\"1988\",\"won\":\"true\"},{\"awardId\":\"2\",\"awardName\":\"Golden
+        Globe\",\"category\":\"Henrietta Award (World Film Favorites)\",\"awardCatId\":\"264\",\"year\":\"1971\",\"won\":\"true\"}],\"credits\":[{\"rootId\":\"10072651\",\"role\":\"Actor\",\"characterName\":\"Joe\",\"title\":\"A
+        Fistfull of Dollars\",\"tmsId\":\"MV004977720000\",\"year\":\"1964\",\"type\":\"movie\"},{\"rootId\":\"10372574\",\"role\":\"Director\",\"title\":\"Jersey
+        Boys\",\"tmsId\":\"MV005317390000\",\"year\":\"2014\",\"type\":\"movie\"},{\"rootId\":\"10372574\",\"role\":\"Producer\",\"title\":\"Jersey
+        Boys\",\"tmsId\":\"MV005317390000\",\"year\":\"2014\",\"type\":\"movie\"},{\"rootId\":\"10817\",\"role\":\"Director\",\"title\":\"Bird\",\"tmsId\":\"MV000250260000\",\"year\":\"1988\",\"type\":\"movie\"},{\"rootId\":\"10817\",\"role\":\"Producer\",\"title\":\"Bird\",\"tmsId\":\"MV000250260000\",\"year\":\"1988\",\"type\":\"movie\"},{\"rootId\":\"10931\",\"role\":\"Actor\",\"characterName\":\"Insp.
+        \\\"Dirty\\\" Harry Callahan\",\"title\":\"The Dead Pool\",\"tmsId\":\"MV000253020000\",\"year\":\"1988\",\"type\":\"movie\"},{\"rootId\":\"11303\",\"role\":\"Executive
+        Producer\",\"title\":\"Thelonious Monk: Straight, No Chaser\",\"tmsId\":\"MV000261020000\",\"year\":\"1988\",\"type\":\"movie\"},{\"rootId\":\"1139\",\"role\":\"Actor\",\"characterName\":\"Joe
+        Kidd\",\"title\":\"Joe Kidd\",\"tmsId\":\"MV000017930000\",\"year\":\"1972\",\"type\":\"movie\"},{\"rootId\":\"11672\",\"role\":\"Director\",\"title\":\"Pink
+        Cadillac\",\"tmsId\":\"MV000271520000\",\"year\":\"1989\",\"type\":\"movie\"},{\"rootId\":\"11672\",\"role\":\"Actor\",\"characterName\":\"Tommy
+        Nowak\",\"title\":\"Pink Cadillac\",\"tmsId\":\"MV000271520000\",\"year\":\"1989\",\"type\":\"movie\"},{\"rootId\":\"1195\",\"role\":\"Actor\",\"characterName\":\"Coogan\",\"title\":\"Coogan's
+        Bluff\",\"tmsId\":\"MV000018830000\",\"year\":\"1968\",\"type\":\"movie\"},{\"rootId\":\"12479\",\"role\":\"Producer\",\"title\":\"White
+        Hunter, Black Heart\",\"tmsId\":\"MV000314850000\",\"year\":\"1990\",\"type\":\"movie\"},{\"rootId\":\"12479\",\"role\":\"Director\",\"title\":\"White
+        Hunter, Black Heart\",\"tmsId\":\"MV000314850000\",\"year\":\"1990\",\"type\":\"movie\"},{\"rootId\":\"12479\",\"role\":\"Actor\",\"characterName\":\"John
+        Wilson\",\"title\":\"White Hunter, Black Heart\",\"tmsId\":\"MV000314850000\",\"year\":\"1990\",\"type\":\"movie\"},{\"rootId\":\"12903\",\"role\":\"Actor\",\"characterName\":\"Nick
+        Pulovski\",\"title\":\"The Rookie\",\"tmsId\":\"MV000325550000\",\"year\":\"1990\",\"type\":\"movie\"},{\"rootId\":\"12903\",\"role\":\"Director\",\"title\":\"The
+        Rookie\",\"tmsId\":\"MV000325550000\",\"year\":\"1990\",\"type\":\"movie\"},{\"rootId\":\"13070\",\"role\":\"Director\",\"title\":\"Amazing
+        Stories: The Movie IV\",\"tmsId\":\"MV000329530000\",\"year\":\"1991\",\"type\":\"TV
+        movie\"},{\"rootId\":\"13211\",\"role\":\"Actor\",\"characterName\":\"Carlo\",\"title\":\"The
+        Witches\",\"tmsId\":\"MV000333660000\",\"year\":\"1965\",\"type\":\"movie\"},{\"rootId\":\"14136\",\"role\":\"Director\",\"title\":\"Unforgiven\",\"tmsId\":\"MV000353840000\",\"year\":\"1992\",\"type\":\"movie\"},{\"rootId\":\"14136\",\"role\":\"Actor\",\"characterName\":\"William
+        'Bill' Munny\",\"title\":\"Unforgiven\",\"tmsId\":\"MV000353840000\",\"year\":\"1992\",\"type\":\"movie\"},{\"rootId\":\"14136\",\"role\":\"Producer\",\"title\":\"Unforgiven\",\"tmsId\":\"MV000353840000\",\"year\":\"1992\",\"type\":\"movie\"},{\"rootId\":\"14892\",\"role\":\"Actor\",\"characterName\":\"Frank
+        Horrigan\",\"title\":\"In the Line of Fire\",\"tmsId\":\"MV000370550000\",\"year\":\"1993\",\"type\":\"movie\"},{\"rootId\":\"15210\",\"role\":\"Director\",\"title\":\"A
+        Perfect World\",\"tmsId\":\"MV000379270000\",\"year\":\"1993\",\"type\":\"movie\"},{\"rootId\":\"15210\",\"role\":\"Producer\",\"title\":\"A
+        Perfect World\",\"tmsId\":\"MV000379270000\",\"year\":\"1993\",\"type\":\"movie\"},{\"rootId\":\"15210\",\"role\":\"Actor\",\"characterName\":\"Chief
+        Red Garnett\",\"title\":\"A Perfect World\",\"tmsId\":\"MV000379270000\",\"year\":\"1993\",\"type\":\"movie\"},{\"rootId\":\"161886\",\"role\":\"Original
+        Music\",\"title\":\"Flags of Our Fathers\",\"tmsId\":\"MV001852160000\",\"year\":\"2006\",\"type\":\"movie\"},{\"rootId\":\"161886\",\"role\":\"Producer\",\"title\":\"Flags
+        of Our Fathers\",\"tmsId\":\"MV001852160000\",\"year\":\"2006\",\"type\":\"movie\"},{\"rootId\":\"161886\",\"role\":\"Director\",\"title\":\"Flags
+        of Our Fathers\",\"tmsId\":\"MV001852160000\",\"year\":\"2006\",\"type\":\"movie\"},{\"rootId\":\"164369\",\"role\":\"Producer\",\"title\":\"Letters
+        From Iwo Jima\",\"tmsId\":\"MV001875900000\",\"year\":\"2006\",\"type\":\"movie\"},{\"rootId\":\"164369\",\"role\":\"Director\",\"title\":\"Letters
+        From Iwo Jima\",\"tmsId\":\"MV001875900000\",\"year\":\"2006\",\"type\":\"movie\"},{\"rootId\":\"16694\",\"role\":\"Producer\",\"title\":\"The
+        Stars Fell on Henrietta\",\"tmsId\":\"MV000421640000\",\"year\":\"1995\",\"type\":\"movie\"},{\"rootId\":\"16783\",\"role\":\"Producer\",\"title\":\"The
+        Bridges of Madison County\",\"tmsId\":\"MV004285560000\",\"year\":\"1995\",\"type\":\"movie\"},{\"rootId\":\"16783\",\"role\":\"Director\",\"title\":\"The
+        Bridges of Madison County\",\"tmsId\":\"MV004285560000\",\"year\":\"1995\",\"type\":\"movie\"},{\"rootId\":\"16783\",\"role\":\"Actor\",\"characterName\":\"Robert
+        Kincaid\",\"title\":\"The Bridges of Madison County\",\"tmsId\":\"MV004285560000\",\"year\":\"1995\",\"type\":\"movie\"},{\"rootId\":\"16793\",\"role\":\"Actor\",\"characterName\":\"Himself\",\"title\":\"A
+        Personal Journey With Martin Scorsese Through American Movies\",\"tmsId\":\"MV000424410000\",\"year\":\"1995\",\"type\":\"TV
+        movie\"},{\"rootId\":\"1726\",\"role\":\"Actor\",\"characterName\":\"Jennings\",\"title\":\"Revenge
+        of the Creature\",\"tmsId\":\"MV000027930000\",\"year\":\"1955\",\"type\":\"movie\"},{\"rootId\":\"17329\",\"role\":\"Actor\",\"characterName\":\"Himself
+        - in Cannes\",\"title\":\"A Hundred and One Nights\",\"tmsId\":\"MV000438900000\",\"year\":\"1995\",\"type\":\"movie\"},{\"rootId\":\"181814\",\"role\":\"Producer\",\"title\":\"Changeling\",\"tmsId\":\"MV002262580000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"181814\",\"role\":\"Original
+        Music\",\"title\":\"Changeling\",\"tmsId\":\"MV002262580000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"181814\",\"role\":\"Director\",\"title\":\"Changeling\",\"tmsId\":\"MV002262580000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"183329\",\"role\":\"Director\",\"title\":\"Gran
+        Torino\",\"tmsId\":\"MV002293570000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"183329\",\"role\":\"Actor\",\"characterName\":\"Walt
+        Kowalski\",\"title\":\"Gran Torino\",\"tmsId\":\"MV002293570000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"183329\",\"role\":\"Producer\",\"title\":\"Gran
+        Torino\",\"tmsId\":\"MV002293570000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"188727\",\"role\":\"Narrator\",\"title\":\"You
+        Must Remember This: The Warner Bros. Story\",\"tmsId\":\"MV002342980000\",\"year\":\"2008\",\"type\":\"movie\"},{\"rootId\":\"19014\",\"role\":\"Director\",\"title\":\"Absolute
+        Power\",\"tmsId\":\"MV000496220000\",\"year\":\"1997\",\"type\":\"movie\"},{\"rootId\":\"19014\",\"role\":\"Producer\",\"title\":\"Absolute
+        Power\",\"tmsId\":\"MV000496220000\",\"year\":\"1997\",\"type\":\"movie\"},{\"rootId\":\"19014\",\"role\":\"Actor\",\"characterName\":\"Luther
+        Whitney\",\"title\":\"Absolute Power\",\"tmsId\":\"MV000496220000\",\"year\":\"1997\",\"type\":\"movie\"},{\"rootId\":\"20217\",\"role\":\"Producer\",\"title\":\"Midnight
+        in the Garden of Good and Evil\",\"tmsId\":\"MV000536540000\",\"year\":\"1997\",\"type\":\"movie\"},{\"rootId\":\"20217\",\"role\":\"Director\",\"title\":\"Midnight
+        in the Garden of Good and Evil\",\"tmsId\":\"MV000536540000\",\"year\":\"1997\",\"type\":\"movie\"},{\"rootId\":\"2029\",\"role\":\"Actor\",\"characterName\":\"Dave\",\"title\":\"Play
+        Misty for Me\",\"tmsId\":\"MV000032980000\",\"year\":\"1971\",\"type\":\"movie\"},{\"rootId\":\"2029\",\"role\":\"Director\",\"title\":\"Play
+        Misty for Me\",\"tmsId\":\"MV000032980000\",\"year\":\"1971\",\"type\":\"movie\"},{\"rootId\":\"2178\",\"role\":\"Actor\",\"characterName\":\"Keith
+        Williams\",\"title\":\"Ambush at Cimarron Pass\",\"tmsId\":\"MV000035540000\",\"year\":\"1958\",\"type\":\"movie\"},{\"rootId\":\"2203\",\"role\":\"Actor\",\"characterName\":\"Marshal
+        Jed Cooper\",\"title\":\"Hang 'Em High\",\"tmsId\":\"MV000036020000\",\"year\":\"1968\",\"type\":\"movie\"},{\"rootId\":\"22708\",\"role\":\"Producer\",\"title\":\"True
+        Crime\",\"tmsId\":\"MV000713960000\",\"year\":\"1999\",\"type\":\"movie\"},{\"rootId\":\"22708\",\"role\":\"Director\",\"title\":\"True
+        Crime\",\"tmsId\":\"MV000713960000\",\"year\":\"1999\",\"type\":\"movie\"},{\"rootId\":\"22708\",\"role\":\"Actor\",\"characterName\":\"Steve
+        Everett\",\"title\":\"True Crime\",\"tmsId\":\"MV000713960000\",\"year\":\"1999\",\"type\":\"movie\"},{\"rootId\":\"22708\",\"role\":\"Original
+        Music\",\"title\":\"True Crime\",\"tmsId\":\"MV000713960000\",\"year\":\"1999\",\"type\":\"movie\"},{\"rootId\":\"2333\",\"role\":\"Actor\",\"characterName\":\"Philo
+        Beddoe\",\"title\":\"Every Which Way but Loose\",\"tmsId\":\"MV000038060000\",\"year\":\"1978\",\"type\":\"movie\"},{\"rootId\":\"2335\",\"role\":\"Actor\",\"characterName\":\"Thunderbolt\",\"title\":\"Thunderbolt
+        and Lightfoot\",\"tmsId\":\"MV000038080000\",\"year\":\"1974\",\"type\":\"movie\"},{\"rootId\":\"2424\",\"role\":\"Director\",\"title\":\"Breezy\",\"tmsId\":\"MV000039580000\",\"year\":\"1973\",\"type\":\"movie\"},{\"rootId\":\"2495\",\"role\":\"Actor\",\"characterName\":\"Sylvester
+        Newel\",\"title\":\"Paint Your Wagon\",\"tmsId\":\"MV000040620000\",\"year\":\"1969\",\"type\":\"movie\"},{\"rootId\":\"2572\",\"role\":\"Actor\",\"characterName\":\"Insp.
+        'Dirty' Harry Callahan\",\"title\":\"The Enforcer\",\"tmsId\":\"MV000041940000\",\"year\":\"1976\",\"type\":\"movie\"},{\"rootId\":\"25964\",\"role\":\"Producer\",\"title\":\"Space
+        Cowboys\",\"tmsId\":\"MV000951010000\",\"year\":\"2000\",\"type\":\"movie\"},{\"rootId\":\"25964\",\"role\":\"Director\",\"title\":\"Space
+        Cowboys\",\"tmsId\":\"MV000951010000\",\"year\":\"2000\",\"type\":\"movie\"},{\"rootId\":\"25964\",\"role\":\"Actor\",\"characterName\":\"Frank
+        Corvin\",\"title\":\"Space Cowboys\",\"tmsId\":\"MV000951010000\",\"year\":\"2000\",\"type\":\"movie\"},{\"rootId\":\"2630\",\"role\":\"Actor\",\"characterName\":\"John
+        McBurney\",\"title\":\"The Beguiled\",\"tmsId\":\"MV000042880000\",\"year\":\"1971\",\"type\":\"movie\"},{\"rootId\":\"29335\",\"role\":\"Actor\",\"characterName\":\"Hogan\",\"title\":\"Sierra
+        Torride\",\"tmsId\":\"MV001185540000\",\"year\":\"1970\",\"type\":\"movie\"},{\"rootId\":\"29809\",\"role\":\"Actor\",\"characterName\":\"Terry
+        McCaleb\",\"title\":\"Blood Work\",\"tmsId\":\"MV001214290000\",\"year\":\"2002\",\"type\":\"movie\"},{\"rootId\":\"29809\",\"role\":\"Producer\",\"title\":\"Blood
+        Work\",\"tmsId\":\"MV001214290000\",\"year\":\"2002\",\"type\":\"movie\"},{\"rootId\":\"29809\",\"role\":\"Director\",\"title\":\"Blood
+        Work\",\"tmsId\":\"MV001214290000\",\"year\":\"2002\",\"type\":\"movie\"},{\"rootId\":\"30089\",\"role\":\"Producer\",\"title\":\"Tightrope\",\"tmsId\":\"MV000174860000\",\"year\":\"1984\",\"type\":\"movie\"},{\"rootId\":\"30089\",\"role\":\"Actor\",\"characterName\":\"Wes
+        Block\",\"title\":\"Tightrope\",\"tmsId\":\"MV000174860000\",\"year\":\"1984\",\"type\":\"movie\"},{\"rootId\":\"32186\",\"role\":\"Director\",\"title\":\"Mystic
+        River\",\"tmsId\":\"MV001362990000\",\"year\":\"2003\",\"type\":\"movie\"},{\"rootId\":\"32186\",\"role\":\"Producer\",\"title\":\"Mystic
+        River\",\"tmsId\":\"MV001362990000\",\"year\":\"2003\",\"type\":\"movie\"},{\"rootId\":\"32186\",\"role\":\"Music\",\"title\":\"Mystic
+        River\",\"tmsId\":\"MV001362990000\",\"year\":\"2003\",\"type\":\"movie\"},{\"rootId\":\"3464\",\"role\":\"Director\",\"title\":\"High
+        Plains Drifter\",\"tmsId\":\"MV000058110000\",\"year\":\"1973\",\"type\":\"movie\"},{\"rootId\":\"3464\",\"role\":\"Actor\",\"characterName\":\"The
+        Stranger\",\"title\":\"High Plains Drifter\",\"tmsId\":\"MV000058110000\",\"year\":\"1973\",\"type\":\"movie\"},{\"rootId\":\"3505308\",\"role\":\"Actor\",\"title\":\"Back
+        for More\",\"tmsId\":\"MV002483670000\",\"year\":\"2007\",\"type\":\"movie\"},{\"rootId\":\"35226\",\"role\":\"Director\",\"title\":\"Million
+        Dollar Baby\",\"tmsId\":\"MV001529640000\",\"year\":\"2004\",\"type\":\"movie\"},{\"rootId\":\"35226\",\"role\":\"Original
+        Music\",\"title\":\"Million Dollar Baby\",\"tmsId\":\"MV001529640000\",\"year\":\"2004\",\"type\":\"movie\"},{\"rootId\":\"35226\",\"role\":\"Producer\",\"title\":\"Million
+        Dollar Baby\",\"tmsId\":\"MV001529640000\",\"year\":\"2004\",\"type\":\"movie\"},{\"rootId\":\"35226\",\"role\":\"Actor\",\"characterName\":\"Frankie
+        Dunn\",\"title\":\"Million Dollar Baby\",\"tmsId\":\"MV001529640000\",\"year\":\"2004\",\"type\":\"movie\"},{\"rootId\":\"3571\",\"role\":\"Actor\",\"characterName\":\"Joe\",\"title\":\"A
+        Fistful of Dollars\",\"tmsId\":\"MV000059870000\",\"year\":\"1964\",\"type\":\"movie\"},{\"rootId\":\"3575791\",\"role\":\"Producer\",\"title\":\"Invictus\",\"tmsId\":\"MV002559630000\",\"year\":\"2009\",\"type\":\"movie\"},{\"rootId\":\"3575791\",\"role\":\"Director\",\"title\":\"Invictus\",\"tmsId\":\"MV002559630000\",\"year\":\"2009\",\"type\":\"movie\"},{\"rootId\":\"3635\",\"role\":\"Actor\",\"characterName\":\"Frank
+        Morris\",\"title\":\"Escape From Alcatraz\",\"tmsId\":\"MV000060900000\",\"year\":\"1979\",\"type\":\"movie\"},{\"rootId\":\"3661\",\"role\":\"Actor\",\"characterName\":\"Insp.
+        \\\"Dirty\\\" Harry Callahan\",\"title\":\"Magnum Force\",\"tmsId\":\"MV000061330000\",\"year\":\"1973\",\"type\":\"movie\"},{\"rootId\":\"37115\",\"role\":\"Actor\",\"characterName\":\"George
+        Moseley\",\"title\":\"Lafayette Escadrille\",\"tmsId\":\"MV000015120000\",\"year\":\"1958\",\"type\":\"movie\"},{\"rootId\":\"38159\",\"role\":\"Actor\",\"title\":\"Never
+        Say Goodbye\",\"tmsId\":\"MV000042130000\",\"year\":\"1956\",\"type\":\"movie\"},{\"rootId\":\"38377\",\"role\":\"Actor\",\"characterName\":\"Jonesey\",\"title\":\"Francis
+        in the Navy\",\"tmsId\":\"MV000047350000\",\"year\":\"1955\",\"type\":\"movie\"},{\"rootId\":\"4161\",\"role\":\"Actor\",\"characterName\":\"Joe\",\"title\":\"The
+        Good, the Bad and the Ugly\",\"tmsId\":\"MV000070280000\",\"year\":\"1967\",\"type\":\"movie\"},{\"rootId\":\"4182\",\"role\":\"Actor\",\"characterName\":\"Harry
+        Callahan\",\"title\":\"Dirty Harry\",\"tmsId\":\"MV000070600000\",\"year\":\"1971\",\"type\":\"movie\"},{\"rootId\":\"4319\",\"role\":\"Actor\",\"characterName\":\"Ben
+        Shockley\",\"title\":\"The Gauntlet\",\"tmsId\":\"MV000073230000\",\"year\":\"1977\",\"type\":\"movie\"},{\"rootId\":\"4319\",\"role\":\"Director\",\"title\":\"The
+        Gauntlet\",\"tmsId\":\"MV000073230000\",\"year\":\"1977\",\"type\":\"movie\"},{\"rootId\":\"4706\",\"role\":\"Actor\",\"characterName\":\"Dumbo
+        Pilot\",\"title\":\"Escapade in Japan\",\"tmsId\":\"MV000080460000\",\"year\":\"1957\",\"type\":\"movie\"},{\"rootId\":\"52\",\"role\":\"Actor\",\"characterName\":\"Philo
+        Beddoe\",\"title\":\"Any Which Way You Can\",\"tmsId\":\"MV000000580000\",\"year\":\"1980\",\"type\":\"movie\"},{\"rootId\":\"523\",\"role\":\"Actor\",\"characterName\":\"Monco\",\"title\":\"For
+        a Few Dollars More\",\"tmsId\":\"MV000008300000\",\"year\":\"1965\",\"type\":\"movie\"},{\"rootId\":\"524\",\"role\":\"Actor\",\"characterName\":\"Pvt.
+        Kelly\",\"title\":\"Kelly's Heroes\",\"tmsId\":\"MV000008310000\",\"year\":\"1970\",\"type\":\"movie\"},{\"rootId\":\"525\",\"role\":\"Actor\",\"characterName\":\"Jet
+        Squadron Leader\",\"title\":\"Tarantula\",\"tmsId\":\"MV000008320000\",\"year\":\"1955\",\"type\":\"movie\"},{\"rootId\":\"5515\",\"role\":\"Actor\",\"characterName\":\"Bronco
+        Billy\",\"title\":\"Bronco Billy\",\"tmsId\":\"MV000097590000\",\"year\":\"1980\",\"type\":\"movie\"},{\"rootId\":\"5515\",\"role\":\"Director\",\"title\":\"Bronco
+        Billy\",\"tmsId\":\"MV000097590000\",\"year\":\"1980\",\"type\":\"movie\"},{\"rootId\":\"5559\",\"role\":\"Actor\",\"characterName\":\"First
+        Saxon\",\"title\":\"Lady Godiva\",\"tmsId\":\"MV000098680000\",\"year\":\"1955\",\"type\":\"movie\"},{\"rootId\":\"574\",\"role\":\"Director\",\"title\":\"The
+        Outlaw Josey Wales\",\"tmsId\":\"MV000008990000\",\"year\":\"1976\",\"type\":\"movie\"},{\"rootId\":\"574\",\"role\":\"Actor\",\"characterName\":\"Josey
+        Wales\",\"title\":\"The Outlaw Josey Wales\",\"tmsId\":\"MV000008990000\",\"year\":\"1976\",\"type\":\"movie\"},{\"rootId\":\"5939\",\"role\":\"Director\",\"title\":\"Firefox\",\"tmsId\":\"MV002851670000\",\"year\":\"1982\",\"type\":\"movie\"},{\"rootId\":\"5939\",\"role\":\"Actor\",\"characterName\":\"Mitchell
+        Gant\",\"title\":\"Firefox\",\"tmsId\":\"MV002851670000\",\"year\":\"1982\",\"type\":\"movie\"},{\"rootId\":\"60962\",\"role\":\"Actor\",\"title\":\"Les
+        Enjeux de la mort\",\"tmsId\":\"MV000472330000\",\"year\":\"1988\",\"type\":\"movie\"},{\"rootId\":\"628\",\"role\":\"Actor\",\"characterName\":\"Lt.
+        Jack Rice\",\"title\":\"The First Traveling Saleslady\",\"tmsId\":\"MV000009830000\",\"year\":\"1956\",\"type\":\"movie\"},{\"rootId\":\"6435\",\"role\":\"Actor\",\"characterName\":\"Red
+        Stovall\",\"title\":\"Honkytonk Man\",\"tmsId\":\"MV000122890000\",\"year\":\"1982\",\"type\":\"movie\"},{\"rootId\":\"6435\",\"role\":\"Director\",\"title\":\"Honkytonk
+        Man\",\"tmsId\":\"MV000122890000\",\"year\":\"1982\",\"type\":\"movie\"},{\"rootId\":\"685\",\"role\":\"Actor\",\"characterName\":\"Lt.
+        Morris Schaffer\",\"title\":\"Where Eagles Dare\",\"tmsId\":\"MV000010670000\",\"year\":\"1969\",\"type\":\"movie\"},{\"rootId\":\"68658\",\"role\":\"Actor\",\"characterName\":\"Himself\",\"title\":\"Forever
+        Hollywood\",\"tmsId\":\"MV000827490000\",\"year\":\"1999\",\"type\":\"movie\"},{\"rootId\":\"7905\",\"role\":\"Director\",\"title\":\"Sudden
+        Impact\",\"tmsId\":\"MV000164860000\",\"year\":\"1983\",\"type\":\"movie\"},{\"rootId\":\"7905\",\"role\":\"Producer\",\"title\":\"Sudden
+        Impact\",\"tmsId\":\"MV000164860000\",\"year\":\"1983\",\"type\":\"movie\"},{\"rootId\":\"7905\",\"role\":\"Actor\",\"characterName\":\"Insp.
+        'Dirty' Harry Callahan\",\"title\":\"Sudden Impact\",\"tmsId\":\"MV000164860000\",\"year\":\"1983\",\"type\":\"movie\"},{\"rootId\":\"807\",\"role\":\"Actor\",\"characterName\":\"Dr.
+        Jonathan Hemlock\",\"title\":\"The Eiger Sanction\",\"tmsId\":\"MV000012480000\",\"year\":\"1975\",\"type\":\"movie\"},{\"rootId\":\"807\",\"role\":\"Director\",\"title\":\"The
+        Eiger Sanction\",\"tmsId\":\"MV000012480000\",\"year\":\"1975\",\"type\":\"movie\"},{\"rootId\":\"8117568\",\"role\":\"Producer\",\"title\":\"Hereafter\",\"tmsId\":\"MV002811420000\",\"year\":\"2010\",\"type\":\"movie\"},{\"rootId\":\"8117568\",\"role\":\"Director\",\"title\":\"Hereafter\",\"tmsId\":\"MV002811420000\",\"year\":\"2010\",\"type\":\"movie\"},{\"rootId\":\"8117568\",\"role\":\"Original
+        Music\",\"title\":\"Hereafter\",\"tmsId\":\"MV002811420000\",\"year\":\"2010\",\"type\":\"movie\"},{\"rootId\":\"8578\",\"role\":\"Actor\",\"characterName\":\"Lieutenant
+        Speer\",\"title\":\"City Heat\",\"tmsId\":\"MV000184320000\",\"year\":\"1984\",\"type\":\"movie\"},{\"rootId\":\"8705\",\"role\":\"Director\",\"title\":\"Pale
+        Rider\",\"tmsId\":\"MV000187150000\",\"year\":\"1985\",\"type\":\"movie\"},{\"rootId\":\"8705\",\"role\":\"Actor\",\"characterName\":\"Preacher\",\"title\":\"Pale
+        Rider\",\"tmsId\":\"MV000187150000\",\"year\":\"1985\",\"type\":\"movie\"},{\"rootId\":\"8705\",\"role\":\"Producer\",\"title\":\"Pale
+        Rider\",\"tmsId\":\"MV000187150000\",\"year\":\"1985\",\"type\":\"movie\"},{\"rootId\":\"8742071\",\"role\":\"Producer\",\"title\":\"J.
+        Edgar\",\"tmsId\":\"MV003655390000\",\"year\":\"2011\",\"type\":\"movie\"},{\"rootId\":\"8742071\",\"role\":\"Director\",\"title\":\"J.
+        Edgar\",\"tmsId\":\"MV003655390000\",\"year\":\"2011\",\"type\":\"movie\"},{\"rootId\":\"8742071\",\"role\":\"Original
+        Music\",\"title\":\"J. Edgar\",\"tmsId\":\"MV003655390000\",\"year\":\"2011\",\"type\":\"movie\"},{\"rootId\":\"9128831\",\"role\":\"Actor\",\"characterName\":\"Gus
+        Lobel\",\"title\":\"Trouble With the Curve\",\"tmsId\":\"MV003904230000\",\"year\":\"2012\",\"type\":\"movie\"},{\"rootId\":\"9128831\",\"role\":\"Producer\",\"title\":\"Trouble
+        With the Curve\",\"tmsId\":\"MV003904230000\",\"year\":\"2012\",\"type\":\"movie\"},{\"rootId\":\"9664\",\"role\":\"Producer\",\"title\":\"Heartbreak
+        Ridge\",\"tmsId\":\"MV000214420000\",\"year\":\"1986\",\"type\":\"movie\"},{\"rootId\":\"9664\",\"role\":\"Actor\",\"characterName\":\"Sergeant
+        Thomas Highway\",\"title\":\"Heartbreak Ridge\",\"tmsId\":\"MV000214420000\",\"year\":\"1986\",\"type\":\"movie\"},{\"rootId\":\"9664\",\"role\":\"Director\",\"title\":\"Heartbreak
+        Ridge\",\"tmsId\":\"MV000214420000\",\"year\":\"1986\",\"type\":\"movie\"},{\"rootId\":\"9951396\",\"role\":\"Actor\",\"title\":\"Eastwood
+        Directs: The Untold Story\",\"tmsId\":\"MV004838280000\",\"year\":\"2013\",\"type\":\"movie\"},{\"rootId\":\"10313615\",\"role\":\"Actor\",\"title\":\"The
+        Lone Ranger: Extras\",\"tmsId\":\"SH018190250000\",\"type\":\"show\"},{\"rootId\":\"183878\",\"role\":\"Guest\",\"title\":\"Late
+        Show With David Letterman\",\"tmsId\":\"SH011630120000\",\"type\":\"show\"},{\"rootId\":\"184037\",\"role\":\"Actor\",\"title\":\"Mystery
+        Science Theater 3000\",\"tmsId\":\"SH000030250000\",\"type\":\"show\"},{\"rootId\":\"184072\",\"role\":\"Guest\",\"title\":\"Today\",\"tmsId\":\"SH000191500000\",\"type\":\"show\"},{\"rootId\":\"184109\",\"role\":\"Guest\",\"title\":\"Extra\",\"tmsId\":\"SH012150990000\",\"type\":\"show\"},{\"rootId\":\"184182\",\"role\":\"Director\",\"title\":\"Amazing
+        Stories\",\"tmsId\":\"SH000002350000\",\"type\":\"show\"},{\"rootId\":\"184220\",\"role\":\"Guest\",\"title\":\"Good
+        Morning America\",\"tmsId\":\"SH000018930000\",\"type\":\"show\"},{\"rootId\":\"184256\",\"role\":\"Guest\",\"title\":\"Entertainment
+        Tonight\",\"tmsId\":\"SH000014570000\",\"type\":\"show\"},{\"rootId\":\"184268\",\"role\":\"Guest\",\"title\":\"The
+        Daily Show With Jon Stewart\",\"tmsId\":\"SH002930530000\",\"type\":\"show\"},{\"rootId\":\"184468\",\"role\":\"Guest\",\"title\":\"Access
+        Hollywood\",\"tmsId\":\"SH001887070000\",\"type\":\"show\"},{\"rootId\":\"184869\",\"role\":\"Guest\",\"title\":\"Jimmy
+        Kimmel Live\",\"tmsId\":\"SH012485060000\",\"type\":\"show\"},{\"rootId\":\"185048\",\"role\":\"Guest\",\"title\":\"The
+        Ellen DeGeneres Show\",\"tmsId\":\"SH005992700000\",\"type\":\"show\"},{\"rootId\":\"185497\",\"role\":\"Guest\",\"title\":\"CBS
+        News Sunday Morning\",\"tmsId\":\"SH000191280000\",\"type\":\"show\"},{\"rootId\":\"186276\",\"role\":\"Guest
+        Star\",\"title\":\"Squawk Box\",\"tmsId\":\"SH001598930000\",\"type\":\"show\"},{\"rootId\":\"186640\",\"role\":\"Guest\",\"title\":\"Lyons
+        & Bailes Reel Talk\",\"tmsId\":\"SH008903750000\",\"type\":\"show\"},{\"rootId\":\"190173\",\"role\":\"Actor\",\"title\":\"Starz
+        Inside\",\"tmsId\":\"SH010535480000\",\"type\":\"show\"},{\"rootId\":\"197377\",\"role\":\"Guest\",\"title\":\"Kickin'
+        It: With Byron Allen\",\"tmsId\":\"SH000777030000\",\"type\":\"show\"},{\"rootId\":\"197391\",\"role\":\"Guest\",\"title\":\"Hollywood
+        Shootout\",\"tmsId\":\"SH000229360000\",\"type\":\"show\"},{\"rootId\":\"202794\",\"role\":\"Guest\",\"title\":\"AFI's
+        10 Top 10\",\"tmsId\":\"SH010506730000\",\"type\":\"show\"},{\"rootId\":\"3632586\",\"role\":\"Guest
+        Star\",\"title\":\"Hollywood & Dine\",\"tmsId\":\"SH011758070000\",\"type\":\"show\"},{\"rootId\":\"363839\",\"role\":\"Guest\",\"title\":\"David
+        Sheehan's Holiday Movie Magic\",\"tmsId\":\"SH011026500000\",\"type\":\"show\"},{\"rootId\":\"378491\",\"role\":\"Guest\",\"title\":\"Entertainers:
+        With Byron Allen\",\"tmsId\":\"SH000974640000\",\"type\":\"show\"},{\"rootId\":\"378509\",\"role\":\"Guest\",\"title\":\"Entertainment
+        Studios.com\",\"tmsId\":\"SH003928220000\",\"type\":\"show\"},{\"rootId\":\"391689\",\"role\":\"Guest\",\"title\":\"Garden
+        Travels\",\"tmsId\":\"SH011080180000\",\"type\":\"show\"},{\"rootId\":\"473590\",\"role\":\"Actor\",\"title\":\"Rawhide\",\"tmsId\":\"SH000035570000\",\"type\":\"show\"},{\"rootId\":\"7847532\",\"role\":\"Guest\",\"title\":\"ES.TV\",\"tmsId\":\"SH011884550000\",\"type\":\"show\"},{\"rootId\":\"7866939\",\"role\":\"Guest\",\"title\":\"Lopez
+        Tonight\",\"tmsId\":\"SH011930540000\",\"type\":\"show\"},{\"rootId\":\"8000750\",\"role\":\"Executive
+        Producer\",\"title\":\"Tony Bennett: The Music Never Ends\",\"tmsId\":\"SH012324570000\",\"type\":\"show\"},{\"rootId\":\"8117313\",\"role\":\"Guest\",\"title\":\"Hollywood
+        Salutes Matt Damon: An American Cinematheque Tribute\",\"tmsId\":\"SH012657480000\",\"type\":\"show\"},{\"rootId\":\"813761\",\"role\":\"Guest\",\"title\":\"My
+        Generation\",\"tmsId\":\"SH010362850000\",\"type\":\"show\"},{\"rootId\":\"8271995\",\"role\":\"Guest\",\"title\":\"George
+        Stroumboulopoulos Tonight\",\"tmsId\":\"SH013212820000\",\"type\":\"show\"},{\"rootId\":\"8374113\",\"role\":\"Executive
+        Producer\",\"title\":\"Dave Brubeck: In His Own Sweet Way\",\"tmsId\":\"SH013460960000\",\"type\":\"show\"},{\"rootId\":\"9514671\",\"role\":\"Actor\",\"title\":\"Clint
+        Eastwood: Out of the Shadows\",\"tmsId\":\"SH016277240000\",\"type\":\"show\"},{\"rootId\":\"9555986\",\"role\":\"Director\",\"title\":\"Piano
+        Blues\",\"tmsId\":\"SH016377290000\",\"type\":\"show\"}]}"
+    http_version: 
+  recorded_at: Sun, 02 Feb 2014 00:21:22 GMT
+recorded_with: VCR 2.8.0

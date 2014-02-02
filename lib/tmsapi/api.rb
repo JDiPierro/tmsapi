@@ -44,6 +44,10 @@ module TMSAPI
       TMSAPI::Resource::Sports.new(@faraday)
     end
 
+    def celebrities
+      TMSAPI::Resource::Celebrities.new(@faraday)
+    end
+
     def default_faraday
       Faraday.new(:url => @base_url, :ssl => @ssl) do |faraday|
         faraday.use CustomLogger if @debug

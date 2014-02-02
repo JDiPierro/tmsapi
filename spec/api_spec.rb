@@ -529,6 +529,30 @@ describe TMSAPI::API, :vcr do
         
       end
     end
+
+    describe "#celebrities" do
+      describe "#details" do 
+        let(:celebrities) {
+          subject.celebrities.details("13461")
+        }
+
+        it 'should return a celebrity' do 
+          celebrities.respond_to?(:person_id).should be_true
+          celebrities.respond_to?(:name_id).should be_true
+          celebrities.respond_to?(:entity_type).should be_true
+          #celebrities.respond_to?(:name).should be_true
+          celebrities.respond_to?(:birth_place).should be_true
+          celebrities.respond_to?(:gender).should be_true
+          celebrities.respond_to?(:preferred_image).should be_true
+          celebrities.respond_to?(:awards).should be_true
+          celebrities.respond_to?(:credits).should be_true
+          celebrities.respond_to?(:birth_date).should be_true
+          celebrities.respond_to?(:role).should be_true
+          celebrities.respond_to?(:character_name).should be_true
+          celebrities.respond_to?(:billing_order).should be_true
+        end
+      end
+    end
     
   end
 end
