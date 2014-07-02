@@ -17,7 +17,7 @@ module TMSAPI
             end
         end
 
-        def theatre_showings(theatre_id, params)
+        def theatre_showings(theatre_id, params = nil)
           params[:startDate] = Date.today unless params[:startDate]
           get(theatre_showings_path(theatre_id), params).each do |movie|
               TMSAPI::Model::Movie.new movie
