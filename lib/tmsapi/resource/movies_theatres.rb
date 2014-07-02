@@ -16,11 +16,22 @@ module TMSAPI
               TMSAPI::Model::Movie.new movie
             end
         end
+
+        def theatre_showings(theatre_id, params)
+          params[:startDate] = Date.today unless params[:startDate]
+          get(theatre_showings_path(theatre_id), params).each do |movie|
+              TMSAPI::Model::Movie.new movie
+            end
+        end
         
         private
         
         def showings_path
           "#{alt_path}/showings"
+        end
+
+        def theatre_showings_path(theatre_id)
+          "#{base_path}/#{theatre_id}/showings"
         end
         
         def base_path
